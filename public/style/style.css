@@ -1,0 +1,9 @@
+#page-wrapper {
+    margin-bottom: -7rem;
+}
+
+#page-wrapper::after {
+    content: "";
+    display: block;
+    height: 7rem;
+}
