@@ -11,21 +11,34 @@ if (!isset($router) || !isset($content)) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="style/variables.css" rel="stylesheet">
     <link href="style/style.css" rel="stylesheet">
+    <link href="style/header.css" rel="stylesheet">
+    <link href="style/footer.css" rel="stylesheet">
     <title>BUT Info Lyon 1</title>
 </head>
 
 <body>
 
-<header>
+<div class="test">
+    <header>
 
-</header>
+        <p>Header</p>
 
-<main>
-    <?= $content ?>
-</main>
+    </header>
+
+    <main>
+        <?= $content ?>
+    </main>
+</div>
 
 <footer>
+
+    <p>Footer</p>
+
+    <?php if (defined('DEBUG_TIME')) { ?>
+        Page générée en <?= round(1_000 * (microtime(true) - DEBUG_TIME)) ?>ms.
+    <?php } ?>
 
 </footer>
 

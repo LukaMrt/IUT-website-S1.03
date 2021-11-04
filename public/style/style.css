@@ -1,8 +1,14 @@
-#page-wrapper {
-    margin-bottom: -7rem;
+body {
+    margin: 0;
+    height: 100%;
 }
 
-#page-wrapper::after {
+.test {
+    margin-bottom: -7rem;
+    min-height: 100%;
+}
+
+.test::after {
     content: "";
     display: block;
     height: 7rem;
