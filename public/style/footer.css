@@ -37,8 +37,8 @@ p.footer-subtitle {
 }
 
 footer a {
-    color: white;
     text-decoration: none;
+    color: white;
 }
 
 footer p {
@@ -56,6 +56,7 @@ a.contact-link {
 footer ul {
     list-style: none;
     margin-top: 0;
+    padding: 0;
 }
 
 footer li {
