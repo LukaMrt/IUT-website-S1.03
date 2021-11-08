@@ -1,3 +1,52 @@
 header {
     flex: 1 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+header img {
+    height: 125px;
+}
+
+header > div {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+header p {
+    margin-top: 50px;
+    font-size: 2em;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    padding: 0 2px;
+}
+
+a.page-link:hover {
+    border-bottom: solid gray;
+}
+
+a.page-btn {
+    color: var(--color);
+    border-radius: 30px;
+    border: solid var(--color);
+    padding: 10px 15px;
+}
+
+a.page-btn:hover {
+    background-color: var(--color2);
+    color: white;
+    border-radius: 30px;
+    border: solid var(--color2);
+    padding: 10px 15px;
+}
+
+.current {
+    border-bottom: solid gray;
 }

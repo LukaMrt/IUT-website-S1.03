@@ -1,6 +1,6 @@
 <?php
 
-if (!isset($router) || !isset($content)) {
+if (!isset($router) || !isset($content) || !isset($current)) {
     exit(0);
 }
 
@@ -22,6 +22,17 @@ if (!isset($router) || !isset($content)) {
 
 <header>
 
+    <img src="img/Lyon-1-claude-Bernard.png" alt="Logo université Claude Bernard">
+
+    <div>
+        <p><a href="<?= $router->url('home') ?>" class="page-link <?= $current == 'home' ? 'current' : '' ?>">BUT ?</a></p>
+
+        <p><a href="<?= $router->url('future') ?>" class="page-link <?= $current == 'future' ? 'current' : '' ?>">Post-BUT</a></p>
+
+        <p><a href="<?= $router->url('school') ?>" class="page-link <?= $current == 'school' ? 'current' : '' ?>">L'IUT Lyon 1</a></p>
+
+        <p><a class="about page-btn" href="<?= $router->url('about') ?>">À propos</a></p>
+    </div>
 
 </header>
 
