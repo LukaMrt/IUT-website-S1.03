@@ -20,27 +20,62 @@ if (!isset($router) || !isset($content)) {
 
 <body>
 
-<div class="test">
-    <header>
+<header>
 
-        <p>Header</p>
 
-    </header>
+</header>
 
-    <main>
-        <?= $content ?>
-    </main>
-</div>
+<main>
+    <?= $content ?>
+</main>
 
 <footer>
+    <img src="img/footer.png" alt="footer image">
 
-    <p>Footer</p>
+    <div>
 
-    <?php if (defined('DEBUG_TIME')) { ?>
-        Page générée en <?= round(1_000 * (microtime(true) - DEBUG_TIME)) ?>ms.
-    <?php } ?>
+        <p class="center"><a href="<?= $router->url('about') ?>" class="contact-link">À propos</a></p>
+        
+        <div class="center">
+            <p class="footer-title">IUT Lyon 1</p>
+            <p class="footer-subtitle"><em>L'excellence technologique</em></p>
+
+        </div>
+
+        <div>
+            <p>
+                Les icônes utilisés sur le site ont été trouvés sur <a href="https://www.flaticon.com" target="_blank"><em>flaticons.com</em></a>
+                et ont été réalisés par les artistes suivant :
+            </p>
+
+            <ul>
+                <li><a href="https://www.flaticon.com/fr/auteurs/kosonicon" title="kosonicon" target="_blank">kosonicon</a></li>
+                <li><a href="https://www.flaticon.com/fr/auteurs/uniconlabs" title="Uniconlabs" target="_blank">Uniconlabs</a></li>
+                <li><a href="https://www.freepik.com/" title="Freepik" target="_blank">Freepik</a></li>
+                <li><a href="https://www.flaticon.com/authors/triangle-squad" title="Triangle Squad" target="_blank">Triangle Squad</a></li>
+                <li><a href="https://www.flaticon.com/fr/auteurs/dreamicons" title="dreamicons" target="_blank">dreamicons</a></li>
+            </ul>
+
+<!--            <p>-->
+<!--                <a href="https://www.flaticon.com/fr/auteurs/kosonicon" title="kosonicon" target="_blank"-->
+<!--                   class="artist">kosonicon</a>,-->
+<!--                <a href="https://www.flaticon.com/fr/auteurs/uniconlabs" title="Uniconlabs" target="_blank"-->
+<!--                   class="artist">Uniconlabs</a>,-->
+<!--                <a href="https://www.freepik.com/" title="Freepik" target="_blank" class="artist">Freepik</a>,-->
+<!--                <a href="https://www.flaticon.com/authors/triangle-squad" title="Triangle Squad" target="_blank"-->
+<!--                   class="artist">Triangle-->
+<!--                    Squad</a>-->
+<!--                et <a href="https://www.flaticon.com/fr/auteurs/dreamicons" title="dreamicons" target="_blank"-->
+<!--                      class="artist">dreamicons</a>-->
+<!--            </p>-->
+        </div>
+    </div>
 
 </footer>
+
+<?php if (defined('DEBUG_TIME')) { ?>
+    Page générée en <?= round(1_000 * (microtime(true) - DEBUG_TIME)) ?>ms.
+<?php } ?>
 
 </body>
 

@@ -1,15 +1,15 @@
-body {
-    margin: 0;
+html, body {
     height: 100%;
 }
 
-.test {
-    margin-bottom: -7rem;
-    min-height: 100%;
+body {
+    margin: 0;
+    height: 100%;
+    font-family: "Roboto Light", serif ;
+    display: flex;
+    flex-direction: column;
 }
 
-.test::after {
-    content: "";
-    display: block;
-    height: 7rem;
+main {
+    flex: 1 0 auto;
 }

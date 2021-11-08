@@ -6,7 +6,7 @@ use Whoops\Run;
 
 require dirname(__DIR__) . DIRECTORY_SEPARATOR . 'vendor/autoload.php';
 
-define('DEBUG_TIME', microtime(true));
+//define('DEBUG_TIME', microtime(true));
 
 if (defined('DEBUG_TIME')) {
     $whoops = new Run();
