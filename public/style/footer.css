@@ -51,6 +51,12 @@ a.contact-link {
     border-radius: 300px;
     border: solid white;
     padding: 0.3em;
+    transition: background-color 400ms;
+}
+
+a.contact-link:hover {
+    color: var(--color);
+    background-color: white;
 }
 
 footer ul {
