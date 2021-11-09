@@ -1,6 +1,6 @@
 <?php
 
-if (!isset($router) || !isset($content) || !isset($current)) {
+if (!isset($router) || !isset($content) || !isset($current) || !isset($css)) {
     exit(0);
 }
 
@@ -15,6 +15,7 @@ if (!isset($router) || !isset($content) || !isset($current)) {
     <link href="style/style.css" rel="stylesheet">
     <link href="style/header.css" rel="stylesheet">
     <link href="style/footer.css" rel="stylesheet">
+    <?= $css ?>
     <title>BUT Info Lyon 1</title>
 </head>
 
