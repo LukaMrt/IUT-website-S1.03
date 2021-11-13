@@ -1,0 +1,169 @@
+main img {
+    height: 100px;
+}
+
+h1 {
+    margin: 20px 0 120px;
+    font-size: 4em;
+}
+
+img.big-img {
+    height: 300px;
+}
+
+.description {
+    background-color: var(--color);
+    color: white;
+    padding: 20px 0;
+}
+
+.description h2 {
+    font-size: 2.5em;
+}
+
+.description p {
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.description > article {
+    width: 65%;
+    margin: auto;
+}
+
+.elements-title {
+    background-color: var(--color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.elements-title img {
+    padding-top: 10px;
+}
+
+.elements-title h2 {
+    padding-bottom: 10px;
+}
+
+.elements-title div {
+    background-color: white;
+    border: solid 1px lightgray;
+    border-bottom: none;
+    width: calc(0.7 * 33.3%);
+    padding: 10px 10px 0;
+}
+
+.elements-title div:first-child {
+    border-right: none;
+    border-radius: 30px 0 0 0;
+}
+
+.elements-title div:last-child {
+    border-left: none;
+    border-radius: 0 30px 0 0;
+}
+
+.elements-description {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.elements-description > * {
+    border: solid 1px lightgray;
+    border-top: none;
+    width: calc(0.7 * 33.3%);
+    padding: 20px 10px;
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.elements-description ul {
+    list-style: none;
+}
+
+.elements-description > *:first-child {
+    border-right: none;
+    border-radius: 0 0 0 30px;
+}
+
+.elements-description > *:last-child {
+    border-left: none;
+    border-radius: 0 0 30px 0;
+}
+
+main > h2, article > h2 {
+    font-size: 3em;
+    margin: 70px 0 50px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cards > * {
+    border: solid 1px var(--color);
+    border-radius: 10px;
+    max-width: 30%;
+    margin: 20px;
+    padding: 5px 40px 15px 0;
+    text-align: left;
+}
+
+.cards h3 {
+    text-transform: none;
+    font-weight: normal;
+    font-size: 1.4em;
+}
+
+.cards h3::before {
+    content: '';
+    background-color: var(--color);
+    display: inline-block;
+    height: 1em;
+    width: 7px;
+    margin-right: 10px;
+    border-radius: 0 3px 3px 0;
+}
+
+.cards p {
+    padding: 0 20px;
+    font-size: 1.1em;
+}
+
+.prerequisites {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.prerequisites p {
+    padding: 0 70px;
+    font-size: 1.3em;
+}
+
+.validation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 70px;
+}
+
+.validation > * {
+    width: 40%;
+}
+
+.validation p {
+    padding: 0 60px;
+    font-size: 1.3em;
+}

@@ -23,14 +23,14 @@ if (!isset($router) || !isset($content) || !isset($current) || !isset($css)) {
 
 <header>
 
-    <img src="img/Lyon-1-claude-Bernard.png" alt="Logo université Claude Bernard">
+    <img src="img/Lyon-1-Claude-Bernard.png" alt="Logo université Claude Bernard">
 
     <div>
-        <p><a href="<?= $router->url('home') ?>" class="page-link <?= $current == 'home' ? 'current' : '' ?>">BUT ?</a></p>
+        <p><a href="<?= $router->url('home') ?>" class="<?= $current == 'home' ? 'current' : 'page-link' ?>">BUT ?</a></p>
 
-        <p><a href="<?= $router->url('future') ?>" class="page-link <?= $current == 'future' ? 'current' : '' ?>">Post-BUT</a></p>
+        <p><a href="<?= $router->url('future') ?>" class="<?= $current == 'future' ? 'current' : 'page-link' ?>">Post-BUT</a></p>
 
-        <p><a href="<?= $router->url('school') ?>" class="page-link <?= $current == 'school' ? 'current' : '' ?>">L'IUT Lyon 1</a></p>
+        <p><a href="<?= $router->url('school') ?>" class="<?= $current == 'school' ? 'current' : 'page-link' ?>">L'IUT Lyon 1</a></p>
 
         <p><a class="about page-btn" href="<?= $router->url('about') ?>">À propos</a></p>
     </div>
