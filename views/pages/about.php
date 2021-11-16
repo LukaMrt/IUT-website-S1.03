@@ -1,14 +1,9 @@
 <?php
 $current = 'about';
-$css = <<<HTML
-<link href="style/about.css" rel="stylesheet" >
-HTML;
-?>
+$css = '<link href="style/about.css" rel="stylesheet">';
 
-<h1>À propos de nous</h1>
-
-<div>
-    <span class="author first-child active">
+$authors = [
+    <<<HTML
         <img src="img/Melvyn.png" class="pp" alt="Image Melvyn">
         <h2>Melvyn</h2>
         <p>Futur UX designer</p>
@@ -16,8 +11,8 @@ HTML;
         <p>Il est sûr que les aliens existent</p>
         <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">melvyn-delpree.com</a></p>
         <p><a href="https://www.linkedin.com/in/melvyn-delpree-07a710221/" target="_blank">LinkedIn</a></p>
-    </span>
-    <span class="author second-child">
+    HTML,
+    <<<HTML
         <img src="img/Luka.png" class="pp" alt="Image Luka">
         <h2>Luka</h2>
         <p>Futur ingénieur INSA</p>
@@ -25,6 +20,20 @@ HTML;
         <p>Il rêve de majorer</p>
         <p><a href="https://lukamaret.com" target="_blank">lukamaret.com</a></p>
         <p><a href="https://www.linkedin.com/in/luka-maret-b04326182/" target="_blank">LinkedIn</a></p>
+    HTML
+];
+
+shuffle($authors);
+?>
+
+<h1>À propos de nous</h1>
+
+<div>
+    <span class="author first-child active">
+        <?= $authors[0] ?>
+    </span>
+    <span class="author second-child">
+        <?= $authors[1] ?>
     </span>
 </div>
 
