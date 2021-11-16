@@ -27,28 +27,31 @@ main img {
     height: 200px;
 }
 
-main label {
-    display: inline-block;
-    margin: 0 4px;
-    width: 15px;
-    height: 15px;
-    border: 2px solid var(--color);
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-span.active {
-    display: block;
-    animation: fade 0.8s;
-}
-
 span {
     display: none;
     height: 350px;
     margin-bottom: 30px;
 }
 
-@keyframes fade {
+span.active {
+    display: block;
+    animation: fadeIn 2s ease-in;
+}
+
+span:nth-of-type(1).active {
+    animation: translate1 1s;
+}
+
+span:nth-of-type(2).active {
+    animation: translate2 1s;
+}
+
+a {
+    color: var(--color);
+    text-decoration: none;
+}
+
+@keyframes fadeIn {
     from {
         opacity: 0;
     }
@@ -57,9 +60,35 @@ span {
     }
 }
 
-.btn-nav {
-    font-size: 50px;
-    margin: 0 15px;
+@keyframes translate1 {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes translate2 {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+main label {
+    display: inline-block;
+    margin: 0 4px;
+    width: 19px;
+    height: 19px;
+    border: 2px solid var(--color);
+    border-radius: 50%;
     cursor: pointer;
 }
 
@@ -79,9 +108,4 @@ input[name="carousel"] {
 
 main div span p {
     line-height: 0.25em;
-}
-
-a{
-    color: var(--color);
-    text-decoration: none;
 }

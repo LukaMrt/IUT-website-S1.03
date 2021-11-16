@@ -29,21 +29,21 @@ HTML;
 </div>
 
 <div>
-    <input id="carousel-1" type="radio" name="carousel" checked>
-    <input id="carousel-2" type="radio" name="carousel">
+    <input id="carousel-1" type="radio" name="carousel" autocomplete="off" checked>
+    <input id="carousel-2" type="radio" name="carousel" autocomplete="off">
     <label for="carousel-1"></label>
     <label for="carousel-2"></label>
 </div>
 
 <script>
-    const btn=document.getElementById("carousel-2")
-    btn.addEventListener("click", ()=>{
-        document.querySelector(".author.second-child").classList.add("active")
-        document.querySelector(".author.first-child").classList.remove("active")
-    })
-    const btn2=document.getElementById("carousel-1")
-    btn2.addEventListener("click", ()=>{
-        document.querySelector(".author.first-child").classList.add("active")
-        document.querySelector(".author.second-child").classList.remove("active")
-    })
+
+    function addListener(btn, add, remove) {
+        btn.addEventListener("click", () => {
+            document.querySelector(add).classList.add("active")
+            document.querySelector(remove).classList.remove("active")
+        })
+    }
+
+    addListener(document.getElementById("carousel-1"), ".author.first-child", ".author.second-child");
+    addListener(document.getElementById("carousel-2"), ".author.second-child", ".author.first-child");
 </script>
