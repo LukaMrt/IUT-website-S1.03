@@ -64,6 +64,7 @@ if (!isset($router) || !isset($content) || !isset($current) || !isset($css)) {
                 <li><a href="https://www.freepik.com/" title="Freepik" target="_blank">Freepik</a></li>
                 <li><a href="https://www.flaticon.com/authors/triangle-squad" title="Triangle Squad" target="_blank">Triangle Squad</a></li>
                 <li><a href="https://www.flaticon.com/fr/auteurs/dreamicons" title="dreamicons" target="_blank">dreamicons</a></li>
+                <li><a href="https://www.flaticon.com/authors/eucalyp" title="eucalyp" target="_blank">Eycalyp</a></li>
             </ul>
             
         </div>
