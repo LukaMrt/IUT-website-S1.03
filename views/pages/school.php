@@ -47,7 +47,7 @@ $css = '<link href="style/school.css" rel="stylesheet" >';
 
 <div class="school-description">
 
-<!--    <img src="img/iut.png" alt="Photo IUT">-->
+    <!--    <img src="img/iut.png" alt="Photo IUT">-->
     <img src="img/engineer.png" alt="Photo IUT">
 
     <article>
@@ -69,6 +69,7 @@ $css = '<link href="style/school.css" rel="stylesheet" >';
     <img src="img/computers.jpeg" alt="Images matériel informatique">
 
     <article>
+        <h2>Matériel informatique</h2>
         <p>
             Le site de la Doua de l’IUT Lyon 1 est équipé de matériel informatique de qualité qui permet de développer
             des applications et des sites web ou de modéliser des bases de données sans connaître le moindre
@@ -83,6 +84,7 @@ $css = '<link href="style/school.css" rel="stylesheet" >';
     <img src="img/bde.png" alt="Logo BDE">
 
     <article>
+        <h2>Bureau des étudiants</h2>
         <p>
             Le département informatique de L’IUT Lyon 1 la Doua a un BDE (bureau des étudiants) actif qui organise des
             évènements de tous genres comme des soirées, des after-work, des concours de jeux vidéo, d’art ou autres. Un
@@ -92,3 +94,9 @@ $css = '<link href="style/school.css" rel="stylesheet" >';
     </article>
 
 </div>
+
+
+<h2>Situer l'IUT</h2>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2782.252654117773!2d4.880484115757669!3d45.786165819922466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4c01be700d079%3A0x822f9923c40658e3!2sIUT%20LYON%201%20-%20Accueil%2C%2069100%20Villeurbanne!5e0!3m2!1sfr!2sfr!4v1637147285367!5m2!1sfr!2sfr"
+        allowfullscreen loading="lazy" class="map"></iframe>

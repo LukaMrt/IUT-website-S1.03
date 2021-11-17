@@ -17,7 +17,7 @@ $authors = [
         <h2>Luka</h2>
         <p>Futur ingénieur INSA</p>
         <p>Il aime les photos de lui bébé</p>
-        <p>Il rêve de majorer</p>
+        <p>Il rêve de majorer un DS de maths</p>
         <p><a href="https://lukamaret.com" target="_blank">lukamaret.com</a></p>
         <p><a href="https://www.linkedin.com/in/luka-maret-b04326182/" target="_blank">LinkedIn</a></p>
     HTML
