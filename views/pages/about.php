@@ -10,7 +10,7 @@ $js = '<script type="text/javascript" src="js/carousel.js"></script>';
 
 $authors = [
     <<<HTML
-        <img src="img/Melvyn.png" class="pp" alt="Image Melvyn">
+        <img src="img/Melvyn.png" class="profile-picture" alt="Image Melvyn">
         <h2>Melvyn</h2>
         <p>Futur UX designer</p>
         <p>Il aime les céréales en dessert</p>
@@ -19,7 +19,7 @@ $authors = [
         <p><a href="https://www.linkedin.com/in/melvyn-delpree-07a710221/" target="_blank">LinkedIn</a></p>
     HTML,
     <<<HTML
-        <img src="img/Luka.png" class="pp" alt="Image Luka">
+        <img src="img/Luka.png" class="profile-picture" alt="Image Luka">
         <h2>Luka</h2>
         <p>Futur ingénieur INSA</p>
         <p>Il aime les photos de lui bébé</p>
@@ -34,13 +34,17 @@ shuffle($authors);
 
 <h1>À propos de nous</h1>
 
-<div>
-    <span class="first-child active">
-        <?= $authors[0] ?>
-    </span>
-    <span class="second-child">
-        <?= $authors[1] ?>
-    </span>
+<div class="carousel">
+    <div class="carousel-container">
+        <div class="slide-holder">
+            <span class="first-child active">
+                <?= $authors[0] ?>
+            </span>
+                <span class="second-child">
+                <?= $authors[1] ?>
+            </span>
+        </div>
+    </div>
 </div>
 
 <div>
