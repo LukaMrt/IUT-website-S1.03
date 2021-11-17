@@ -1,6 +1,7 @@
 <?php
 $current = 'school';
 $css = '<link href="style/school.css" rel="stylesheet" >';
+$js = '';
 ?>
 
 <h1>Étudier à l'IUT Lyon 1, site la Doua</h1>

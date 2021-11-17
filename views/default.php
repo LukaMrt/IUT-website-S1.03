@@ -1,6 +1,6 @@
 <?php
 
-if (!isset($router) || !isset($content) || !isset($current) || !isset($css)) {
+if (!isset($router) || !isset($content) || !isset($current) || !isset($css) || !isset($js)) {
     exit(0);
 }
 
@@ -15,7 +15,7 @@ if (!isset($router) || !isset($content) || !isset($current) || !isset($css)) {
     <link href="style/style.css" rel="stylesheet">
     <link href="style/header.css" rel="stylesheet">
     <link href="style/footer.css" rel="stylesheet">
-    <?= $css ?>
+    <?= $css . "\n" ?>
     <title>BUT Info Lyon 1</title>
 </head>
 
@@ -47,7 +47,7 @@ if (!isset($router) || !isset($content) || !isset($current) || !isset($css)) {
     <div>
 
         <p class="center"><a href="<?= $router->url('about') ?>" class="contact-link">À propos</a></p>
-        
+
         <div class="center">
             <p class="footer-title">IUT Lyon 1</p>
             <p class="footer-subtitle"><em>L'excellence technologique</em></p>
@@ -66,7 +66,7 @@ if (!isset($router) || !isset($content) || !isset($current) || !isset($css)) {
                 <li><a href="https://www.flaticon.com/fr/auteurs/dreamicons" title="dreamicons" target="_blank">dreamicons</a></li>
                 <li><a href="https://www.flaticon.com/authors/eucalyp" title="eucalyp" target="_blank">Eucalyp</a></li>
             </ul>
-            
+
         </div>
     </div>
 
@@ -75,6 +75,8 @@ if (!isset($router) || !isset($content) || !isset($current) || !isset($css)) {
 <?php if (defined('DEBUG_TIME')) { ?>
     Page générée en <?= round(1_000 * (microtime(true) - DEBUG_TIME)) ?>ms.
 <?php } ?>
+
+<?= $js . "\n" ?>
 
 </body>
 

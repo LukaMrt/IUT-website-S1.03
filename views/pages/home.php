@@ -1,8 +1,7 @@
 <?php
 $current = 'home';
-$css = <<<HTML
-    <link href="style/home.css" rel="stylesheet" >
-HTML;
+$css = '<link href="style/home.css" rel="stylesheet" >';
+$js = '';
 ?>
 
 <h1>Qu'est-ce que le BUT ?</h1>

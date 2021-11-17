@@ -1,6 +1,7 @@
 <?php
 $current = '404';
 $css = '<link href="style/404.css" rel="stylesheet" >';
+$js = '';
 ?>
 
 <div>

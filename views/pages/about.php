@@ -1,6 +1,12 @@
 <?php
+
+if (!isset($router)) {
+    return;
+}
+
 $current = 'about';
 $css = '<link href="style/about.css" rel="stylesheet">';
+$js = '<script type="text/javascript" src="js/carousel.js"></script>';
 
 $authors = [
     <<<HTML
@@ -29,10 +35,10 @@ shuffle($authors);
 <h1>À propos de nous</h1>
 
 <div>
-    <span class="author first-child active">
+    <span class="first-child active">
         <?= $authors[0] ?>
     </span>
-    <span class="author second-child">
+    <span class="second-child">
         <?= $authors[1] ?>
     </span>
 </div>
@@ -40,19 +46,23 @@ shuffle($authors);
 <div>
     <input id="carousel-1" type="radio" name="carousel" autocomplete="off" checked>
     <input id="carousel-2" type="radio" name="carousel" autocomplete="off">
-    <label for="carousel-1"></label>
-    <label for="carousel-2"></label>
+    <label class="carousel" for="carousel-1"></label>
+    <label class="carousel" for="carousel-2"></label>
 </div>
 
-<script>
+<h2>Nous contacter</h2>
 
-    function addListener(btn, add, remove) {
-        btn.addEventListener("click", () => {
-            document.querySelector(add).classList.add("active")
-            document.querySelector(remove).classList.remove("active")
-        })
-    }
-
-    addListener(document.getElementById("carousel-1"), ".author.first-child", ".author.second-child");
-    addListener(document.getElementById("carousel-2"), ".author.second-child", ".author.first-child");
-</script>
+<form action="<?= $router->url('home_post') ?>" method="post">
+    <div>
+        <label for="name">
+            <input type="text" name="name" placeholder="Nom">
+        </label>
+        <label for="lastName">
+            <input type="email" name="email" placeholder="Email">
+        </label>
+    </div>
+    <label for="message">
+        <input type="text" name="message" placeholder="Message">
+    </label>
+    <button type="submit">Envoyer</button>
+</form>

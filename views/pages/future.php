@@ -1,8 +1,7 @@
 <?php
 $current = 'future';
-$css = <<<HTML
-<link href="style/future.css" rel="stylesheet" >
-HTML;
+$css = '<link href="style/future.css" rel="stylesheet" >';
+$js = '';
 ?>
 
 <h1>Parcours post-BUT</h1>
