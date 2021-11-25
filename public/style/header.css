@@ -55,6 +55,7 @@ a.page-btn {
     border-radius: 30px;
     border: solid var(--color);
     padding: 10px 15px;
+    transition: background-color 400ms;
 }
 
 a.page-btn:hover {

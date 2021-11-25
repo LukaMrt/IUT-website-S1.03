@@ -1,5 +1,5 @@
 html, body {
-    height: 100%;
+    width: 99vw;
 }
 
 body {
@@ -18,5 +18,16 @@ main {
     text-align: center;
 }
 
+h1 {
+    margin: 20px 0 120px;
+    font-size: 4em;
+}
 
+h2 {
+    font-size: 2em;
+    margin: 70px 0 50px;
+}
 
+main img {
+    height: 100px;
+}

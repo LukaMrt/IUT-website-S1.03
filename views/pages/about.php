@@ -6,7 +6,7 @@ if (!isset($router)) {
 
 $current = 'about';
 $css = '<link href="style/about.css" rel="stylesheet">';
-$js = '<script type="text/javascript" src="js/carousel.js"></script>';
+$js = '<script type="text/javascript" src="js/carousel.js" defer></script>';
 
 $authors = [
     <<<HTML

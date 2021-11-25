@@ -18,7 +18,7 @@ footer > div {
 }
 
 footer > div > * {
-    width: 25%;
+    width: 30%;
 }
 
 .center {
@@ -27,12 +27,12 @@ footer > div > * {
 
 p.footer-title {
     margin-top: 0;
-    font-size: 4em;
+    font-size: 5em;
     margin-bottom: 0;
 }
 
 p.footer-subtitle {
-    font-size: 1.3em;
+    font-size: 1.7em;
     margin-top: 0;
 }
 
@@ -46,7 +46,7 @@ footer p {
 }
 
 a.contact-link {
-    font-size: 2em;
+    font-size: 1.5em;
     text-decoration: none;
     border-radius: 300px;
     border: solid white;
@@ -66,6 +66,10 @@ footer ul {
 }
 
 footer li {
-    font-size: 1.3em;
+    font-size: 0.9em;
     margin-top: 5px;
+}
+
+footer div div:last-child p {
+    font-size: 1em;
 }

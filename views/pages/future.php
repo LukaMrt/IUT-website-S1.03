@@ -1,48 +1,17 @@
 <?php
 $current = 'future';
-$css = '<link href="style/future.css" rel="stylesheet" >';
-$js = '';
+$css = <<<HTML
+    <link href="style/future.css" rel="stylesheet">
+    <link href="style/headband.css" rel="stylesheet">
+HTML;
+$js = '<script src="js/headband.js" type="text/javascript" defer></script>';
 ?>
 
 <h1>Parcours post-BUT</h1>
 
 <img src="img/arrow.png" alt="Image flèche" class="big-img">
 
-<div class="description">
-    <h2>Que faire après l'obtention d'un BUT ?</h2>
-</div>
-
-<div class="elements-title">
-    <div>
-        <img src="img/scholarship.png" alt="Parcours étudiant">
-        <h2>Master</h2>
-    </div>
-
-    <div>
-        <img src="img/engineer.png" alt="Ingénieur">
-        <h2>Écoles d'ingénieur</h2>
-    </div>
-
-    <div>
-        <img src="img/job-search.png" alt="Monde professionnel">
-        <h2>Insertion professionnelle</h2>
-    </div>
-</div>
-
-<div class="elements-description">
-    <p>
-        Il est possible de rentrer en Master après avoir réussi son BUT.
-    </p>
-
-    <p>
-        Les écoles d'ingénieur acceptent des étudiants sortant d'IUT.
-    </p>
-
-    <p>
-        Le BUT est un diplôme professionnalisant reconnu qui permet de travailler dans le monde professionnel après son
-        obtention.
-    </p>
-</div>
+<custom-headband class="headband"></custom-headband>
 
 <div class="container">
     <div class="line right"></div>

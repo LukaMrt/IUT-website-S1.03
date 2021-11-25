@@ -1,76 +1,17 @@
 <?php
 $current = 'home';
-$css = '<link href="style/home.css" rel="stylesheet" >';
-$js = '';
+$css = <<<HTML
+    <link href="style/home.css" rel="stylesheet">
+    <link href="style/headband.css" rel="stylesheet">
+HTML;
+$js = '<script src="js/headband.js" type="text/javascript" defer></script>';
 ?>
 
 <h1>Qu'est-ce que le BUT ?</h1>
 
 <img src="img/data.png" alt="Image ordinateur" class="big-img">
 
-<div class="description">
-    <article>
-        <h2>Le Bachelor Universitaire de Technologie, ou BUT</h2>
-        <p>
-            Le BUT est un diplôme national français qui s'obtient après 3 années de préparation dans un Institut
-            Universitaire de Technologie (ou IUT). Il a la même valeur qu'une Licence tout en étant un diplôme plus
-            professionnalisant. Les stages et projets réalisés durant les 3 années d'études permettent d'acquérir de
-            l'expérience. Il existe 24 BUT différents, chacun permettant de se former dans une spécialisation
-            différente. Parmi ces 24 spécialités, on trouve l'Informatique, la Chimie, le Génie Civil ou encore les
-            Techniques de Management. Sur ce site, nous parlerons uniquement du BUT Informatique et plus
-            particulièrement du BUT Informatique préparé sur le site de la Doua de l'Université Lyon 1.
-        </p>
-    </article>
-</div>
-
-<div class="elements-title">
-    <div>
-        <img src="img/clock.png" alt="Horloge">
-        <h2>Durée du BUT</h2>
-    </div>
-
-    <div>
-        <img src="img/calendar.png" alt="Calendrier">
-        <h2>Matières enseignées (Semestre 1)</h2>
-    </div>
-
-    <div>
-        <img src="img/medal.png" alt="Médaille">
-        <h2>Qualités requises</h2>
-    </div>
-</div>
-
-<div class="elements-description">
-    <p>
-        Une BUT se prépare en 3 ans. Il est possible de quitter la formation après 2 en étant titulaire d'un DUT
-        (Diplôme
-        Universitaire de Technologie, remplacé par le BUT). La formation est découpée en 6 semestres, chacun étant
-        distinct des autres par les matières qu'il contient et les évaluations qui permettent de le valider.
-    </p>
-
-    <ul>
-        <li>Développement web</li>
-        <li>Conception de bases de données</li>
-        <li>Mathématiques</li>
-        <li>SQL</li>
-        <li>Langage C</li>
-        <li>Bases de l'économie</li>
-        <li>Algorithmique</li>
-        <li>Communication</li>
-        <li>Architecture des ordinateurs</li>
-        <li>Systèmes d'exploitation</li>
-        <li>Projet personnel et professionnel</li>
-        <li>Git</li>
-    </ul>
-
-    <ul>
-        <li>Rigueur</li>
-        <li>Méthode</li>
-        <li>Autonomie</li>
-        <li>Motivation</li>
-        <li>Curiosité</li>
-    </ul>
-</div>
+<custom-headband class="headband"></custom-headband>
 
 <h2><em>À retenir</em></h2>
 

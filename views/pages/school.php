@@ -1,52 +1,19 @@
 <?php
 $current = 'school';
-$css = '<link href="style/school.css" rel="stylesheet" >';
-$js = '';
+$css = <<<HTML
+    <link href="style/school.css" rel="stylesheet">
+    <link href="style/headband.css" rel="stylesheet">
+HTML;
+$js = '<script src="js/headband.js" type="text/javascript" defer></script>';
 ?>
 
 <h1>Étudier à l'IUT Lyon 1, site la Doua</h1>
 
 <img src="img/lyon.png" alt="Image lyon" class="big-img">
 
-<div class="description">
-    <article>
-        <h2>Institut Universitaire de Technologie</h2>
-        <p>1 Rue de la Technologie, 69100 Villeurbanne</p>
-    </article>
-</div>
+<custom-headband class="headband"></custom-headband>
 
-<div class="elements-title">
-    <div>
-        <img src="img/lyon-logo.png" alt="Logo ville de Lyon">
-        <h2>Ville de Lyon</h2>
-    </div>
-
-    <div>
-        <img src="img/successful.png" alt="Image succès">
-        <h2>L'excellence technologique</h2>
-    </div>
-
-    <div>
-        <img src="img/team.png" alt="Image groupe">
-        <h2>Entourage</h2>
-    </div>
-</div>
-
-<div class="elements-description">
-    <p>Étudier dans l'une des plus grandes villes étudiantes de Lyon.</p>
-
-    <p>
-        L'IUT se veut leader des formations scientifiques de niveau technicien dans la ville de Lyon. Il incarne
-        l'excellence technologique portée par cette volonté.
-    </p>
-
-    <p>
-        Il y a une très bonne ambiance parmi les étudiants de l'IUT. Les profs et le personnels sont très compétents et
-        la formation est de qualité.
-    </p>
-</div>
-
-<div class="school-description">
+<div class="school-content">
 
     <!--    <img src="img/iut.png" alt="Photo IUT">-->
     <img src="img/engineer.png" alt="Photo IUT">
@@ -65,7 +32,7 @@ $js = '';
 
 </div>
 
-<div class="computers-description">
+<div class="school-content reverse">
 
     <img src="img/computers.jpeg" alt="Images matériel informatique">
 
@@ -80,7 +47,7 @@ $js = '';
     </article>
 
 </div>
-<div class="bde-description">
+<div class="school-content bde">
 
     <img src="img/bde.png" alt="Logo BDE">
 
