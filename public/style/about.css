@@ -208,3 +208,15 @@ button:hover {
 button:hover {
     cursor: pointer;
 }
+
+@media (max-width: 720px) {
+
+    .carousel-container {
+        width: 100%;
+    }
+
+    form {
+        width: 80%;
+    }
+
+}

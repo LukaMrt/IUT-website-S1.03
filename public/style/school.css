@@ -1,5 +1,5 @@
 .big-img {
-    margin-right: 80%;
+    margin-right: 60%;
     margin-bottom: 0;
 }
 
@@ -61,6 +61,7 @@
 
     .school-content article h2 {
         margin: 70px 0 30px;
+        line-height: 1.1em;
     }
 
     .bde img {
