@@ -124,7 +124,6 @@ a.page-btn:hover {
         flex-direction: column;
         justify-content: right;
         align-items: center;
-        transition: displ;
         display: none;
     }
 

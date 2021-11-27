@@ -75,6 +75,19 @@ custom-card {
     font-size: 1.3em;
 }
 
+@media (max-width: 1080px) {
+
+    .prerequisites {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .prerequisites div {
+        margin-bottom: 30px;
+    }
+
+}
+
 @media (max-width: 720px) {
 
     .cards {
@@ -84,15 +97,6 @@ custom-card {
 
     custom-card {
         max-width: 70%;
-    }
-
-    .prerequisites {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .prerequisites div {
-        margin-bottom: 30px;
     }
 
     .validation {
