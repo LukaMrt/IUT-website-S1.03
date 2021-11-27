@@ -106,8 +106,8 @@ class HeadBand extends HTMLElement {
     constructor() {
         super();
         const content = JSON.parse(this.getAttribute("headband-content"));
-        this.header = document.createElement('div');
-        this.header.innerHTML = `
+        let header = document.createElement('div');
+        header.innerHTML = `
                 <div class="headband-header">
                     <article>
                         <h2>
@@ -120,24 +120,24 @@ class HeadBand extends HTMLElement {
                 </div>
                 `;
 
-        this.body = document.createElement('div');
-        this.body.classList.add('headband-body');
+        let body = document.createElement('div');
+        body.classList.add('headband-body');
 
-        this.emptyHeadband = document.createElement('div');
-        this.emptyHeadband.classList.add('headband-empty');
+        let emptyHeadband = document.createElement('div');
+        emptyHeadband.classList.add('headband-empty');
 
-        this.cards = document.createElement('div');
-        this.cards.classList.add('headband-cards');
+        let cards = document.createElement('div');
+        cards.classList.add('headband-cards');
 
-        this.createCard(1, content.content[0]);
-        this.createCard(2, content.content[1]);
-        this.createCard(3, content.content[2]);
+        cards.appendChild(this.createCard(1, content.content[0]));
+        cards.appendChild(this.createCard(2, content.content[1]));
+        cards.appendChild(this.createCard(3, content.content[2]));
 
-        this.body.appendChild(this.emptyHeadband);
-        this.body.appendChild(this.cards);
+        body.appendChild(emptyHeadband);
+        body.appendChild(cards);
 
-        this.appendChild(this.header);
-        this.appendChild(this.body);
+        this.appendChild(header);
+        this.appendChild(body);
     }
 
     createCard(number, content) {
@@ -162,7 +162,7 @@ class HeadBand extends HTMLElement {
 
         card.appendChild(title);
         card.appendChild(description);
-        this.cards.appendChild(card);
+        return card;
     }
 
 }

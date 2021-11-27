@@ -5,6 +5,10 @@ main {
     margin-bottom: 50px;
 }
 
+span h2 {
+    margin: 25px 0;
+}
+
 .profile-picture {
     width: 200px;
     border-radius: 100%;
