@@ -1,5 +1,5 @@
 .big-img {
-    height: 300px;
+    height: 200px;
 }
 
 .cards {
@@ -9,7 +9,7 @@
     justify-content: center;
 }
 
-.cards > * {
+custom-card {
     border: solid 1px var(--color);
     border-radius: 10px;
     max-width: 30%;
@@ -18,7 +18,7 @@
     text-align: left;
 }
 
-.cards h3 {
+.card h3 {
     text-transform: none;
     font-weight: normal;
     font-size: 1.4em;
@@ -26,7 +26,7 @@
     margin-left: 15px;
 }
 
-.cards h3::before {
+.card h3::before {
     content: '';
     background-color: var(--color);
     display: inline-block;
@@ -39,7 +39,7 @@
     right: calc(100% - 1px);
 }
 
-.cards p {
+.card p {
     padding: 0 20px;
     font-size: 1.1em;
 }
@@ -66,11 +66,42 @@
     margin-bottom: 70px;
 }
 
-.validation > * {
+.validation article {
     width: 40%;
 }
 
 .validation p {
     padding: 0 60px;
     font-size: 1.3em;
+}
+
+@media (max-width: 720px) {
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    custom-card {
+        max-width: 70%;
+    }
+
+    .prerequisites {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .prerequisites div {
+        margin-bottom: 30px;
+    }
+
+    .validation {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .validation article {
+        width: 70%;
+    }
+
 }

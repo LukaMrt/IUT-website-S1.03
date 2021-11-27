@@ -10,7 +10,14 @@ header img {
     height: 125px;
 }
 
-header > div {
+img.menu-btn {
+    display: none;
+    height: 50px;
+    margin-top: 20px;
+    margin-right: 15px;
+}
+
+.menu {
     width: 60%;
     display: flex;
     flex-direction: row;
@@ -73,4 +80,62 @@ a.page-btn:hover {
     height: 3px;
     width: 100%;
     transform: scaleX(1);
+}
+
+@media (max-width: 1080px) {
+
+    header img {
+        height: 90px;
+    }
+
+    .menu {
+        width: 70%;
+    }
+
+    header p {
+        font-size: 1.3em;
+    }
+
+}
+
+@media (max-width: 720px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    .responsive-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 30px;
+    }
+
+    img.menu-btn {
+        display: block;
+    }
+
+    img.menu-btn:hover {
+        cursor: pointer;
+    }
+
+    .menu {
+        width: 100%;
+        flex-direction: column;
+        justify-content: right;
+        align-items: center;
+        transition: displ;
+        display: none;
+    }
+
+    .visible {
+        display: flex;
+    }
+
+    header p {
+        margin-top: 0;
+        font-size: 1.6em;
+        line-height: 0.8em;
+    }
+
 }

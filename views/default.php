@@ -5,6 +5,7 @@ if (!isset($router) || !isset($content) || !isset($current) || !isset($css) || !
 }
 
 ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -17,6 +18,7 @@ if (!isset($router) || !isset($content) || !isset($current) || !isset($css) || !
     <link href="style/footer.css" rel="stylesheet">
     <?= $js . "\n" ?>
     <?= $css . "\n" ?>
+    <script type="text/javascript" src="js/menu.js" defer></script>
     <title>BUT Info Lyon 1</title>
 </head>
 
@@ -24,9 +26,14 @@ if (!isset($router) || !isset($content) || !isset($current) || !isset($css) || !
 
 <header>
 
-    <img src="img/Lyon-1-Claude-Bernard.png" alt="Logo université Claude Bernard">
+    <div class="responsive-header">
+        <img src="img/Lyon-1-Claude-Bernard.png" alt="Logo université Claude Bernard">
 
-    <div>
+        <img src="img/menu.png" alt="Menu" class="menu-btn">
+    </div>
+
+
+    <div class="menu">
         <p><a href="<?= $router->url('home') ?>" class="<?= $current == 'home' ? 'current' : 'page-link' ?>">BUT ?</a>
         </p>
 
@@ -74,6 +81,8 @@ if (!isset($router) || !isset($content) || !isset($current) || !isset($css) || !
                 <li><a href="https://www.flaticon.com/fr/auteurs/dreamicons" title="dreamicons" target="_blank">dreamicons</a>
                 </li>
                 <li><a href="https://www.flaticon.com/authors/eucalyp" title="eucalyp" target="_blank">Eucalyp</a></li>
+                <li><a href="https://www.flaticon.com/fr/auteurs/pixel-perfect" title="Pixel perfect" target="_blank">Pixel
+                        perfect</a></li>
             </ul>
 
         </div>
