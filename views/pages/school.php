@@ -21,8 +21,9 @@ $js = '<script src="js/headband.js" type="text/javascript" defer></script>';
     <article>
         <h2>Site de l'IUT</h2>
         <p>
-            L'IUT Lyon 1, site la Doua, regroupe 5 BUT : BUT Informatique, BUT Chimie, BUT Génie biologique, BUT Génie
-            civil et BUT Gestion des entreprises et des organisations. Étant assez à l'écart du centre du campus,
+            L'IUT Lyon 1, site la Doua, regroupe 6 BUT : BUT Informatique, BUT Chimie, BUT Génie Chimique et Génie des
+            Procédés, BUT Génie Biologique, BUT Génie
+            Civil et BUT Gestion des Entreprises et des Administrations. Étant assez à l'écart du centre du campus,
             l'environnement est très calme et propice au travail. En plus de cet avantage sonore, l'IUT reste bien placé
             puisqu'il est très facile de se rendre dans des magasins, restaurants universitaires ou autre en prenant le
             tramway ou simplement à pied. Côté travail, les étudiants sont très bien accompagnés par l'IUT qui organise
@@ -42,7 +43,8 @@ $js = '<script src="js/headband.js" type="text/javascript" defer></script>';
             Le site de la Doua de l’IUT Lyon 1 est équipé de matériel informatique de qualité qui permet de développer
             des applications et des sites web ou de modéliser des bases de données sans connaître le moindre
             ralentissement. Les salles informatiques sont accessibles tout le temps si elles ne sont pas occupées par un
-            cours. Pour travailler chez soit, il est aussi possible de demander un ordinateur portable de prêt.
+            cours. Pour travailler chez soi, il est aussi souvent possible d'obtenir des aides afin de disposer d'un
+            ordinateur portable (souvent de prêt).
         </p>
     </article>
 
@@ -55,9 +57,9 @@ $js = '<script src="js/headband.js" type="text/javascript" defer></script>';
         <h2>Bureau des étudiants</h2>
         <p>
             Le département informatique de L’IUT Lyon 1 la Doua a un BDE (bureau des étudiants) actif qui organise des
-            évènements de tous genres comme des soirées, des after-work, des concours de jeux vidéo, d’art ou autres. Un
+            évènements de tous genres comme des soirées, des after-work, des tournois de jeux vidéo, d’art ou autres. Un
             service de parrainage assemblant des étudiants de première année et des étudiants de deuxième année pour de
-            l’aide pour les cours ou pour faire des rencontres plus facilement est aussi mis en place
+            l’aide pour les cours ou pour faire des rencontres plus facilement est aussi mise en place
         </p>
     </article>
 

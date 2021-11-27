@@ -85,7 +85,7 @@ HTML;
         <h2><em>Notation du BUT</em></h2>
 
         <p>
-            La notation en BUT resemble beaucoup à celle du lycée avec des contrôles fréquents et une moyenne. Celle ci
+            La notation en BUT resemble beaucoup à celle du lycée avec des contrôles fréquents et une moyenne. Celle-ci
             est séparée en 6 compétences. La grosse différence avec le lycée est la présence de projets à réaliser
             durant le semestre, chacun comptant pour 40% de la moyenne d'une compétence.
         </p>

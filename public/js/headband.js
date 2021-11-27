@@ -42,7 +42,7 @@ const headbandContent =
                 },
                 {
                     title: `Insertion professionnelle`,
-                    description: `Le BUT est un diplôme professionnalisant reconnu qui permet de travailler dans le monde professionnel après son obtention.`,
+                    description: `Le BUT est un diplôme professionnalisant reconnu qui permet de rentrer dans le monde professionnel après son obtention.`,
                     img: `img/job-search.png`,
                     alt: `Monde professionnel`
                 }
@@ -54,7 +54,7 @@ const headbandContent =
             content: [
                 {
                     title: `Ville de Lyon`,
-                    description: `Étudier dans l'une des plus grandes villes étudiantes de Lyon.`,
+                    description: `Étudier dans l'une des plus grandes villes étudiantes de France.`,
                     img: `img/lyon-logo.png`,
                     alt: `Logo ville de Lyon`
                 },
