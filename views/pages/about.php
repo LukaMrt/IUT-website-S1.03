@@ -6,7 +6,7 @@ if (!isset($router)) {
 
 $current = 'about';
 $css = '<link href="style/about.css" rel="stylesheet">';
-$js = '<script type="text/javascript" src="js/carousel.js" defer></script>';
+$js = '<script src="js/carousel.js" defer></script>';
 
 $authors = [
     <<<HTML
@@ -37,12 +37,12 @@ shuffle($authors);
 <div class="carousel">
     <div class="carousel-container">
         <div class="slide-holder">
-            <span class="first-child active">
+            <div class="author first-child active">
                 <?= $authors[0] ?>
-            </span>
-                <span class="second-child">
+            </div>
+            <div class="author second-child">
                 <?= $authors[1] ?>
-            </span>
+            </div>
         </div>
     </div>
 </div>
@@ -59,14 +59,14 @@ shuffle($authors);
 <form action="<?= $router->url('home_post') ?>" method="post">
     <div>
         <label for="name">
-            <input type="text" name="name" placeholder="Nom">
+            <input id="name" type="text" name="name" placeholder="Nom">
         </label>
         <label for="lastName">
-            <input type="email" name="email" placeholder="Email">
+            <input id="lastName" type="email" name="email" placeholder="Email">
         </label>
     </div>
     <label for="message">
-        <input type="text" name="message" placeholder="Message">
+        <input id="message" type="text" name="message" placeholder="Message">
     </label>
     <button type="submit">Envoyer</button>
 </form>

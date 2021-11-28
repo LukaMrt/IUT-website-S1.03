@@ -5,8 +5,8 @@ $css = <<<HTML
     <link href="style/headband.css" rel="stylesheet">
 HTML;
 $js = <<<HTML
-    <script src="js/headband.js" type="text/javascript" defer></script>
-    <script src="js/card.js" type="text/javascript" defer></script>
+    <script src="js/headband.js" defer></script>
+    <script src="js/card.js" defer></script>
 HTML;
 ?>
 

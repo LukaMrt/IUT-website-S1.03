@@ -18,7 +18,7 @@ if (!isset($router) || !isset($content) || !isset($current) || !isset($css) || !
     <link href="style/footer.css" rel="stylesheet">
     <?= $js . "\n" ?>
     <?= $css . "\n" ?>
-    <script type="text/javascript" src="js/menu.js" defer></script>
+    <script src="js/menu.js" defer></script>
     <title>BUT Info Lyon 1</title>
 </head>
 

@@ -5,7 +5,7 @@ main {
     margin-bottom: 50px;
 }
 
-span h2 {
+.author h2 {
     margin: 25px 0;
 }
 
@@ -38,34 +38,34 @@ span h2 {
     justify-content: space-evenly;
 }
 
-span {
+.author {
     width: 35%;
     max-width: 35%;
     display: inline-block;
     margin-bottom: 30px;
 }
 
-span:nth-of-type(1) {
+.author:nth-of-type(1) {
     animation: translate1B 1.2s;
     margin-left: 0;
 }
 
-span:nth-of-type(2) {
+.author:nth-of-type(2) {
     animation: translate2B 1.2s;
     margin-right: 0;
 }
 
-span:nth-of-type(1).active {
+.author:nth-of-type(1).active {
     animation: translate1 1.2s;
     margin-left: 33.33%;
 }
 
-span:nth-of-type(2).active {
+.author:nth-of-type(2).active {
     animation: translate2 1.2s;
     margin-right: 33.33%;
 }
 
-span img {
+.author img {
     height: 200px;
 }
 
@@ -142,7 +142,7 @@ input[name="carousel"] {
     border: 2px solid var(--color);
 }
 
-main div span p {
+.author p {
     line-height: 0.25em;
 }
 

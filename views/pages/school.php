@@ -4,7 +4,7 @@ $css = <<<HTML
     <link href="style/school.css" rel="stylesheet">
     <link href="style/headband.css" rel="stylesheet">
 HTML;
-$js = '<script src="js/headband.js" type="text/javascript" defer></script>';
+$js = '<script src="js/headband.js" defer></script>';
 ?>
 
 <h1>Étudier à l'IUT Lyon 1, site la Doua</h1>
