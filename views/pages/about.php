@@ -48,15 +48,17 @@ shuffle($authors);
 </div>
 
 <div>
-    <input id="carousel-1" type="radio" name="carousel" autocomplete="off" checked>
-    <input id="carousel-2" type="radio" name="carousel" autocomplete="off">
-    <label class="carousel" for="carousel-1"></label>
-    <label class="carousel" for="carousel-2"></label>
+    <form action="#" method="post" autocomplete="off">
+        <input id="carousel-1" type="radio" name="carousel" checked>
+        <input id="carousel-2" type="radio" name="carousel">
+        <label class="carousel" for="carousel-1"></label>
+        <label class="carousel" for="carousel-2"></label>
+    </form>
 </div>
 
 <h2>Nous contacter</h2>
 
-<form action="<?= $router->url('home_post') ?>" method="post">
+<form action="<?= $router->url('home_post') ?>" method="post" class="contact-form">
     <div>
         <label for="name">
             <input id="name" type="text" name="name" placeholder="Nom">
