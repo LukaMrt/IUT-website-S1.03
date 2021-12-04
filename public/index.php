@@ -20,7 +20,6 @@ $pagesViews = 'pages' . DIRECTORY_SEPARATOR;
 
 $router = (new Router(new AltoRouter(), dirname(__DIR__) . DIRECTORY_SEPARATOR . 'views' . DIRECTORY_SEPARATOR))
     ->get('/', $pagesViews . 'home', 'home')
-    ->post('/', $pagesViews . 'home', 'home_post')
     ->get('/accueil', $pagesViews . 'home', 'home_2')
     ->get('/home', $pagesViews . 'home', 'home_3')
     ->get('/presentation', $pagesViews . 'home', 'home_4')
@@ -35,6 +34,7 @@ $router = (new Router(new AltoRouter(), dirname(__DIR__) . DIRECTORY_SEPARATOR .
     ->get('/suite', $pagesViews . 'future', 'future_6')
     ->get('/a-propos', $pagesViews . 'about', 'about')
     ->get('/about', $pagesViews . 'about', 'about_2')
+    ->post('/validation', $pagesViews . 'validation', 'validation')
     ->get('/404', 'errors' . DIRECTORY_SEPARATOR . '404', '404')
     ->get('/[*]', 'errors' . DIRECTORY_SEPARATOR . '404', '404_2')
     ->run();

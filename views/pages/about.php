@@ -58,7 +58,7 @@ shuffle($authors);
 
 <h2>Nous contacter</h2>
 
-<form action="<?= $router->url('home_post') ?>" method="post" class="contact-form">
+<form action="<?= $router->url('validation') ?>" method="post" class="contact-form">
     <div>
         <label for="name">
             <input id="name" type="text" name="name" placeholder="Nom">

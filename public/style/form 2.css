@@ -1,9 +1,0 @@
-main{
-    display: flex;
-    text-align: center;
-    align-items: center;
-}
-
-main h1, main p{
-    text-align: center;
-}
