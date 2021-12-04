@@ -10,7 +10,8 @@
 }
 
 custom-card {
-    border: solid 1px var(--color);
+    border: solid 1px var(--dark-blue);
+    background-color: var(--dark-background);
     border-radius: 10px;
     max-width: 30%;
     margin: 20px;
@@ -28,7 +29,7 @@ custom-card {
 
 .card h3::before {
     content: '';
-    background-color: var(--color);
+    background-color: var(--dark-blue);
     display: inline-block;
     height: 1em;
     width: 7px;

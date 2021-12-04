@@ -31,7 +31,7 @@ header p {
 
 header a {
     text-decoration: none;
-    color: black;
+    color: var(--text-color);
     padding: 0 2px;
 }
 
@@ -58,18 +58,18 @@ a.page-link:not(#current):hover::after {
 }
 
 a.page-btn {
-    color: var(--color);
+    color: var(--ligt-blue);
     border-radius: 30px;
-    border: solid var(--color);
+    border: solid var(--ligt-blue);
     padding: 10px 15px;
     transition: background-color 400ms;
 }
 
 a.page-btn:hover {
-    background-color: var(--color2);
+    background-color: var(--ligt-blue);
     color: white;
     border-radius: 30px;
-    border: solid var(--color2);
+    border: solid var(--ligt-blue);
     padding: 10px 15px;
 }
 

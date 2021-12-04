@@ -5,7 +5,6 @@ if (!isset($router) || !isset($content) || !isset($current) || !isset($css) || !
 }
 
 ?>
-
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -16,9 +15,7 @@ if (!isset($router) || !isset($content) || !isset($current) || !isset($css) || !
     <link href="style/style.css" rel="stylesheet">
     <link href="style/header.css" rel="stylesheet">
     <link href="style/footer.css" rel="stylesheet">
-    <?= $js . "\n" ?>
     <?= $css . "\n" ?>
-    <script src="js/menu.js" defer></script>
     <title>BUT Info Lyon 1</title>
 </head>
 
@@ -26,14 +23,9 @@ if (!isset($router) || !isset($content) || !isset($current) || !isset($css) || !
 
 <header>
 
-    <div class="responsive-header">
-        <img src="img/Lyon-1-Claude-Bernard.png" alt="Logo université Claude Bernard">
+    <img src="img/Lyon-1-Claude-Bernard.png" alt="Logo université Claude Bernard">
 
-        <img src="img/menu.png" alt="Menu" class="menu-btn">
-    </div>
-
-
-    <div class="menu">
+    <div>
         <p><a href="<?= $router->url('home') ?>" class="<?= $current == 'home' ? 'current' : 'page-link' ?>">BUT ?</a>
         </p>
 
@@ -76,13 +68,9 @@ if (!isset($router) || !isset($content) || !isset($current) || !isset($css) || !
                 <li><a href="https://www.flaticon.com/fr/auteurs/uniconlabs" title="Uniconlabs" target="_blank">Uniconlabs</a>
                 </li>
                 <li><a href="https://www.freepik.com/" title="Freepik" target="_blank">Freepik</a></li>
-                <li><a href="https://www.flaticon.com/authors/triangle-squad" title="Triangle Squad" target="_blank">Triangle
-                        Squad</a></li>
-                <li><a href="https://www.flaticon.com/fr/auteurs/dreamicons" title="dreamicons" target="_blank">dreamicons</a>
-                </li>
+                <li><a href="https://www.flaticon.com/authors/triangle-squad" title="Triangle Squad" target="_blank">Triangle Squad</a></li>
+                <li><a href="https://www.flaticon.com/fr/auteurs/dreamicons" title="dreamicons" target="_blank">dreamicons</a></li>
                 <li><a href="https://www.flaticon.com/authors/eucalyp" title="eucalyp" target="_blank">Eucalyp</a></li>
-                <li><a href="https://www.flaticon.com/fr/auteurs/pixel-perfect" title="Pixel perfect" target="_blank">Pixel
-                        perfect</a></li>
             </ul>
 
         </div>
@@ -93,6 +81,8 @@ if (!isset($router) || !isset($content) || !isset($current) || !isset($css) || !
 <?php if (defined('DEBUG_TIME')) { ?>
     Page générée en <?= round(1_000 * (microtime(true) - DEBUG_TIME)) ?>ms.
 <?php } ?>
+
+<?= $js . "\n" ?>
 
 </body>
 
@@ -133,29 +123,12 @@ if (!isset($router) || !isset($content) || !isset($current) || !isset($css) || !
 </div>
 
 <script>
-    const r = document.querySelector(':root');
     const container = document.querySelector('.snowflakes');
     window.addEventListener("keydown", (event) => {
         if (event.keyCode === 78 && container.classList.contains("hidden")) {
             container.classList.remove("hidden");
         } else if (event.keyCode === 78) {
             container.classList.add("hidden");
-        } else if (event.keyCode === 68) {
-            r.style.setProperty('--light-background', '#3F4D55');
-            r.style.setProperty('--dark-background', '#384045');
-            r.style.setProperty('--dark-blue', '#2d8eb6');
-            r.style.setProperty('--light-blue', '#438eb0');
-            r.style.setProperty('--text-color', '#59BCE7');
-            document.getElementById("ordinateur").src = "img/data-dark.png";
-            document.getElementById("maths").src = "img/maths-dark.png";
-            document.getElementById("degree").src = "img/degree-dark.png";
-            document.getElementById("engineer").src = "img/engineer-dark.png";
-        } else if (event.keyCode === 67) {
-            r.style.setProperty('--light-background', '#FFFFFF');
-            r.style.setProperty('--dark-background', '#FFFFFF');
-            r.style.setProperty('--dark-blue', '#396AE5');
-            r.style.setProperty('--light-blue', '#45A1F6');
-            r.style.setProperty('--text-color', '#000000');
         }
     })
 </script>

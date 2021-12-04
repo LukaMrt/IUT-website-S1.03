@@ -8,9 +8,10 @@ main div{
 
 div img{
     width: 30vh;
+    height: initial;
 }
 
 h1{
-    margin: 10vh;
+    margin: 5vh;
     font-size: 4em;
 }

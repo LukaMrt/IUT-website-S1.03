@@ -15,7 +15,7 @@
 
 .school-content img {
     height: 200px;
-    box-shadow: 30px 30px var(--color);
+    box-shadow: 30px 30px var(--dark-blue);
 }
 
 .school-content article {
@@ -27,7 +27,7 @@
 }
 
 .reverse img {
-    box-shadow: -30px 30px var(--color);
+    box-shadow: -30px 30px var(--dark-blue);
 }
 
 .bde img {
@@ -37,7 +37,7 @@
 .map {
     height: 600px;
     width: 80%;
-    box-shadow: 20px 20px var(--color);
+    box-shadow: 20px 20px var(--dark-blue);
     margin-bottom: 100px;
 }
 
@@ -51,7 +51,7 @@
 
     .school-content img {
         height: 200px;
-        box-shadow: 15px 15px var(--color);
+        box-shadow: 15px 15px var(--dark-blue);
     }
 
     .school-content article {

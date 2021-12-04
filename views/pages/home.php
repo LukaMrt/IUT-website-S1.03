@@ -16,7 +16,7 @@ HTML;
 
 <custom-headband class="headband"></custom-headband>
 
-<h2><em>À retenir</em></h2>
+<h2>À retenir</h2>
 
 <div class="cards">
 
@@ -42,18 +42,18 @@ HTML;
 
 
 <article>
-    <h2><em>Prérequis</em></h2>
+    <h2>Prérequis</h2>
 
     <div class="prerequisites">
         <div>
-            <img src="img/data.png" alt="Image ordinateur">
+            <img src="img/data.png" alt="Image ordinateur" id="ordinateur">
             <p>
                 Il n’est pas nécessaire de savoir développer pour intégrer le BUT mais cela permet d'avoir des bases qui
                 peuvent faciliter la compréhension de certaines matières.
             </p>
         </div>
         <div>
-            <img src="img/maths.png" alt="Image mathématiques">
+            <img src="img/maths.png" alt="Image mathématiques" id="maths">
             <p>
                 Il est important d’avoir des connaissances en mathématiques, au moins celle enseigné en baccalauréat
                 STI2D
@@ -61,7 +61,7 @@ HTML;
             </p>
         </div>
         <div>
-            <img src="img/degree.png" alt="Image diplôme">
+            <img src="img/degree.png" alt="Image diplôme" id="degree">
             <p>
                 Pour rentrer en BUT Informatique, il faut un baccalauréat général avec des spécialités scientifiques ou
                 un
@@ -69,7 +69,7 @@ HTML;
             </p>
         </div>
         <div>
-            <img src="img/engineer.png" alt="Image ingénieur">
+            <img src="img/engineer.png" alt="Image ingénieur" id="engineer">
             <p>
                 Savoir travailler en autonomie est crucial pour pouvoir réussir son BUT. Il est aussi important de
                 savoir
@@ -82,7 +82,7 @@ HTML;
 <div class="validation">
     <article>
 
-        <h2><em>Notation du BUT</em></h2>
+        <h2>Notation du BUT</h2>
 
         <p>
             La notation en BUT resemble beaucoup à celle du lycée avec des contrôles fréquents et une moyenne. Celle-ci
@@ -94,7 +94,7 @@ HTML;
 
     <article>
 
-        <h2><em>Valider son semestre</em></h2>
+        <h2>Valider son semestre</h2>
 
         <p>
             Pour valider son semestre, il faut avoir une moyenne d'au moins 8/20 dans toutes les compétences et au moins

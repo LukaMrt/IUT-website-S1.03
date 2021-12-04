@@ -1,15 +1,13 @@
 html, body {
-    width: 99vw;
+    height: 100%;
     background-color: var(--light-background);
 }
 
 p, h1, h2, h3, li{
-    color: var(--text-color);
+    color: #000;
 }
 
 body {
-    position: absolute;
-    z-index: -2;
     margin: 0;
     height: 100%;
     font-family: "Roboto Light", sans-serif ;
@@ -25,30 +23,17 @@ main {
     text-align: center;
 }
 
-h1{
-    margin: 20px 0 120px;
-    font-size: 4em;
-}
-
-main img{
-    height: 100px;
-}
-
-h2 {
-    font-size: 2em;
-    margin: 70px 0 50px;
-}
-
-
 .hidden{
     display: none;
 }
 
+
+/* customizable snowflake styling */
 .snowflake {
     color: var(--dark-blue);
     font-size: 1em;
     font-family: Arial;
-    text-shadow: 0 0 1px var(--text-color);
+    text-shadow: 0 0 1px #000;
 }
 
 /* Demo Purpose Only*/
@@ -63,7 +48,7 @@ h2 {
 
 .demo a {
     font-family: 'Raleway', sans-serif;
-    color: var(--text-color);
+    color: #000;
 }
 
 @-webkit-keyframes snowflakes-fall {
