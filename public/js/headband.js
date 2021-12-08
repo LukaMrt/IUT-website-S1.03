@@ -77,7 +77,7 @@ const headbandContent =
 let url = document.URL.split("/");
 let value;
 
-switch (url[url.length - 1]) {
+switch (url[url.length - 1].split("?")[0]) {
 
     case "futur":
     case "future":
@@ -148,7 +148,7 @@ class HeadBand extends HTMLElement {
         let title = document.createElement('div');
         title.classList.add('headband-card-title');
         title.innerHTML = `
-                <img src="${content.img}" alt="${content.alt}" slot="headband-picture-${number}">
+                <img src="${content.img}" alt="${content.alt}" slot="headband-picture-${number}" class="headband-img">
                 <h2 slot="headband-title-${number}">${content.title}</h2>
                 `;
 

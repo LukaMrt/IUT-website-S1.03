@@ -46,7 +46,6 @@ shuffle($authors);
         </div>
     </div>
 </div>
-
 <div>
     <form action="#" method="post" autocomplete="off">
         <input id="carousel-1" type="radio" name="carousel" checked>

@@ -19,8 +19,8 @@ define('IMAGES_DIRECTORY', dirname(__DIR__) . DIRECTORY_SEPARATOR . DIRECTORY_SE
 $pagesViews = 'pages' . DIRECTORY_SEPARATOR;
 
 $router = (new Router(new AltoRouter(), dirname(__DIR__) . DIRECTORY_SEPARATOR . 'views' . DIRECTORY_SEPARATOR))
-    ->get('/', $pagesViews . 'home', 'home')
-    ->get('/accueil', $pagesViews . 'home', 'home_2')
+    ->get('/', $pagesViews . 'home', 'home_2')
+    ->get('/accueil', $pagesViews . 'home', 'home')
     ->get('/home', $pagesViews . 'home', 'home_3')
     ->get('/presentation', $pagesViews . 'home', 'home_4')
     ->get('/iut', $pagesViews . 'school', 'school')

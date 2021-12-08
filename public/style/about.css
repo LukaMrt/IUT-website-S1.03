@@ -40,11 +40,8 @@ main {
 
 main label {
     display: inline-block;
-    margin: 0 4px;
     width: 15px;
     height: 15px;
-    border: 2px solid var(--light-background);
-    border-radius: 50%;
     cursor: pointer;
 }
 
@@ -78,6 +75,11 @@ main label {
 .author img {
     height: 200px;
 }
+
+.author p {
+     line-height: 0.25em;
+    font-size: 1.2em;
+ }
 
 a {
     color: var(--dark-blue);
@@ -152,10 +154,6 @@ input[name="carousel"] {
     border: 2px solid var(--ligt-blue);
 }
 
-.author p {
-    line-height: 0.25em;
-}
-
 main > h2 {
     margin-top: 90px;
     margin-bottom: 20px;
@@ -185,6 +183,7 @@ input {
     border-bottom: 2px solid gray;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
+    color: var(--text-color);
     background-color: var(--light-background);
 }
 
@@ -210,8 +209,9 @@ button {
     border: 2px solid var(--dark-blue);
     border-radius: 20px;
 }
+
 a{
-    color: var(--dark-blue);
+    color: var(--ligt-blue);
     text-decoration: none;
 
 }

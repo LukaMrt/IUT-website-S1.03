@@ -19,6 +19,8 @@ if (!isset($router) || !isset($content) || !isset($current) || !isset($css) || !
     <?= $js . "\n" ?>
     <?= $css . "\n" ?>
     <script src="js/menu.js" defer></script>
+    <script src="js/christmasTheme.js" defer></script>
+    <script src="js/darkTheme.js" defer></script>
     <title>BUT Info Lyon 1</title>
 </head>
 
@@ -38,22 +40,58 @@ if (!isset($router) || !isset($content) || !isset($current) || !isset($css) || !
 
 
     <div class="menu">
-        <p><a href="<?= $router->url('home') ?>" class="<?= $current == 'home' ? 'current' : 'page-link' ?>">BUT ?</a>
+        <p><a href="<?= $router->url('home') . (isset($_GET['dark']) ? '?dark=true' : '')?>" class="<?= $current == 'home' ? 'current' : 'page-link' ?>">BUT ?</a>
         </p>
 
-        <p><a href="<?= $router->url('future') ?>" class="<?= $current == 'future' ? 'current' : 'page-link' ?>">Post-BUT</a>
+        <p><a href="<?= $router->url('future') . (isset($_GET['dark']) ? '?dark=true' : '')?>" class="<?= $current == 'future' ? 'current' : 'page-link' ?>">Post-BUT</a>
         </p>
 
-        <p><a href="<?= $router->url('school') ?>" class="<?= $current == 'school' ? 'current' : 'page-link' ?>">L'IUT
+        <p><a href="<?= $router->url('school') . (isset($_GET['dark']) ? '?dark=true' : '')?>" class="<?= $current == 'school' ? 'current' : 'page-link' ?>">L'IUT
                 Lyon 1</a></p>
 
-        <p><a class="about page-btn" href="<?= $router->url('about') ?>">À propos</a></p>
+        <p><a class="about page-btn" href="<?= $router->url('about') . (isset($_GET['dark']) ? '?dark=true' : '')?>">À propos</a></p>
+
     </div>
 
 </header>
 
 <main>
+
+    <div id="snow" class="snowflakes hidden" aria-hidden="true">
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❄
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❄
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❄
+        </div>
+    </div>
+
     <?= $content ?>
+
 </main>
 
 <footer>
@@ -61,7 +99,20 @@ if (!isset($router) || !isset($content) || !isset($current) || !isset($css) || !
 
     <div>
 
-        <p class="center"><a href="<?= $router->url('about') ?>" class="contact-link">À propos</a></p>
+        <div class="footer-left">
+            <p class="center"><a href="<?= $router->url('about') . (isset($_GET['dark']) ? '?dark=true' : '')?>" class="contact-link">À propos</a></p>
+
+            <p>Changer de thème :</p>
+            <div class="switch">
+                <div class="toggle">
+                    <div class="toggle-state <?= isset($_GET['dark']) ? 'checked' : ''?>"></div>
+                    <div id="toggle-inner" class="toggle-inner">
+                        <div class="indicator"></div>
+                    </div>
+                    <div class="active-bg"></div>
+                </div>
+            </div>
+        </div>
 
         <div class="center">
             <p class="footer-title">IUT Lyon 1</p>
@@ -101,65 +152,3 @@ if (!isset($router) || !isset($content) || !isset($current) || !isset($css) || !
 </body>
 
 </html>
-
-
-<div id="snow" class="snowflakes hidden" aria-hidden="true">
-    <div class="snowflake">
-        ❅
-    </div>
-    <div class="snowflake">
-        ❅
-    </div>
-    <div class="snowflake">
-        ❆
-    </div>
-    <div class="snowflake">
-        ❄
-    </div>
-    <div class="snowflake">
-        ❅
-    </div>
-    <div class="snowflake">
-        ❆
-    </div>
-    <div class="snowflake">
-        ❄
-    </div>
-    <div class="snowflake">
-        ❅
-    </div>
-    <div class="snowflake">
-        ❆
-    </div>
-    <div class="snowflake">
-        ❄
-    </div>
-</div>
-
-<script>
-    const r = document.querySelector(':root');
-    const container = document.querySelector('.snowflakes');
-    window.addEventListener("keydown", (event) => {
-        if (event.keyCode === 78 && container.classList.contains("hidden")) {
-            container.classList.remove("hidden");
-        } else if (event.keyCode === 78) {
-            container.classList.add("hidden");
-        } else if (event.keyCode === 68) {
-            r.style.setProperty('--light-background', '#3F4D55');
-            r.style.setProperty('--dark-background', '#384045');
-            r.style.setProperty('--dark-blue', '#2d8eb6');
-            r.style.setProperty('--light-blue', '#438eb0');
-            r.style.setProperty('--text-color', '#59BCE7');
-            document.getElementById("ordinateur").src = "img/data-dark.png";
-            document.getElementById("maths").src = "img/maths-dark.png";
-            document.getElementById("degree").src = "img/degree-dark.png";
-            document.getElementById("engineer").src = "img/engineer-dark.png";
-        } else if (event.keyCode === 67) {
-            r.style.setProperty('--light-background', '#FFFFFF');
-            r.style.setProperty('--dark-background', '#FFFFFF');
-            r.style.setProperty('--dark-blue', '#396AE5');
-            r.style.setProperty('--light-blue', '#45A1F6');
-            r.style.setProperty('--text-color', '#000000');
-        }
-    })
-</script>

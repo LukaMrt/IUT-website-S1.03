@@ -7,6 +7,10 @@ p, h1, h2, h3, li{
     color: var(--text-color);
 }
 
+p{
+    opacity: 70%;
+}
+
 body {
     position: absolute;
     z-index: -2;
@@ -47,7 +51,6 @@ h2 {
 .snowflake {
     color: var(--dark-blue);
     font-size: 1em;
-    font-family: Arial;
     text-shadow: 0 0 1px var(--text-color);
 }
 

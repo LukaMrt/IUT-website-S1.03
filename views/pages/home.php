@@ -46,7 +46,7 @@ HTML;
 
     <div class="prerequisites">
         <div>
-            <img src="img/data.png" alt="Image ordinateur" id="ordinateur">
+            <img src="img/data.png" alt="Image ordinateur" id="computer">
             <p>
                 Il n’est pas nécessaire de savoir développer pour intégrer le BUT mais cela permet d'avoir des bases qui
                 peuvent faciliter la compréhension de certaines matières.
