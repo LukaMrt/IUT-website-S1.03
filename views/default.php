@@ -102,7 +102,7 @@ if (!isset($router) || !isset($content) || !isset($current) || !isset($css) || !
         <div class="footer-left">
             <p class="center"><a href="<?= $router->url('about') . (isset($_GET['dark']) ? '?dark=true' : '')?>" class="contact-link">À propos</a></p>
 
-            <p>Changer de thème :</p>
+            <p>Thème sombre :</p>
             <div class="switch">
                 <div class="toggle">
                     <div class="toggle-state <?= isset($_GET['dark']) ? 'checked' : ''?>"></div>
