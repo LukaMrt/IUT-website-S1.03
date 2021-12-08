@@ -77,15 +77,6 @@ header a {
     padding: 0 2px;
 }
 
-@keyframes link-animation {
-    from {
-        transform: scaleX(0);
-    }
-    to {
-        transform: scaleX(1)
-    }
-}
-
 a.page-link::after {
     background-color: gray;
     content: '';
@@ -122,6 +113,15 @@ a.page-btn:hover {
     height: 3px;
     width: 100%;
     transform: scaleX(1);
+}
+
+@keyframes link-animation {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1)
+    }
 }
 
 @media (max-width: 1080px) {

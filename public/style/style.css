@@ -3,11 +3,11 @@ html, body {
     background-color: var(--light-background);
 }
 
-p, h1, h2, h3, li{
+p, h1, h2, h3, li {
     color: var(--text-color);
 }
 
-p{
+p {
     opacity: 70%;
 }
 
@@ -16,7 +16,7 @@ body {
     z-index: -2;
     margin: 0;
     height: 100%;
-    font-family: "Roboto Light", sans-serif ;
+    font-family: "Roboto Light", sans-serif;
     display: flex;
     flex-direction: column;
 }
@@ -29,12 +29,12 @@ main {
     text-align: center;
 }
 
-h1{
+h1 {
     margin: 20px 0 120px;
     font-size: 4em;
 }
 
-main img{
+main img {
     height: 100px;
 }
 
@@ -43,8 +43,30 @@ h2 {
     margin: 70px 0 50px;
 }
 
+a {
+    color: var(--dark-blue);
+    text-decoration: none;
+}
 
-.hidden{
+@media (max-width: 720px) {
+
+    h1 {
+        margin: 20px 0 50px;
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 2em;
+        margin: 50px 0 10px;
+    }
+
+    main img {
+        height: 90px;
+    }
+
+}
+
+.hidden {
     display: none;
 }
 
@@ -52,66 +74,6 @@ h2 {
     color: var(--dark-blue);
     font-size: 1em;
     text-shadow: 0 0 1px var(--text-color);
-}
-
-/* Demo Purpose Only*/
-.demo {
-    font-family: 'Raleway', sans-serif;
-    color: #FFF;
-    display: block;
-    margin: 0 auto;
-    padding: 15px 0;
-    text-align: center;
-}
-
-.demo a {
-    font-family: 'Raleway', sans-serif;
-    color: var(--text-color);
-}
-
-@-webkit-keyframes snowflakes-fall {
-    0% {
-        top: -10%
-    }
-    100% {
-        top: 100%
-    }
-}
-
-@-webkit-keyframes snowflakes-shake {
-    0% {
-        -webkit-transform: translateX(0px);
-        transform: translateX(0px)
-    }
-    50% {
-        -webkit-transform: translateX(80px);
-        transform: translateX(80px)
-    }
-    100% {
-        -webkit-transform: translateX(0px);
-        transform: translateX(0px)
-    }
-}
-
-@keyframes snowflakes-fall {
-    0% {
-        top: -10%
-    }
-    100% {
-        top: 100%
-    }
-}
-
-@keyframes snowflakes-shake {
-    0% {
-        transform: translateX(0px)
-    }
-    50% {
-        transform: translateX(80px)
-    }
-    100% {
-        transform: translateX(0px)
-    }
 }
 
 .snowflake {
@@ -195,20 +157,47 @@ h2 {
     animation-delay: 3s, 1.5s
 }
 
-@media (max-width: 720px) {
-
-    h1 {
-        margin: 20px 0 50px;
-        font-size: 3em;
+@-webkit-keyframes snowflakes-fall {
+    0% {
+        top: -10%
     }
-
-    h2 {
-        font-size: 2em;
-        margin: 50px 0 10px;
+    100% {
+        top: 100%
     }
+}
 
-    main img {
-        height: 90px;
+@-webkit-keyframes snowflakes-shake {
+    0% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px)
     }
+    50% {
+        -webkit-transform: translateX(80px);
+        transform: translateX(80px)
+    }
+    100% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px)
+    }
+}
 
+@keyframes snowflakes-fall {
+    0% {
+        top: -10%
+    }
+    100% {
+        top: 100%
+    }
+}
+
+@keyframes snowflakes-shake {
+    0% {
+        transform: translateX(0px)
+    }
+    50% {
+        transform: translateX(80px)
+    }
+    100% {
+        transform: translateX(0px)
+    }
 }

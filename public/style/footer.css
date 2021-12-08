@@ -6,9 +6,19 @@ footer {
 }
 
 footer img {
-    background-color: white;
+    background-color: var(--light-background);
     max-height: 100%;
     max-width: 100%;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--light-text-color);
+}
+
+footer p {
+    font-size: 1.3em;
+    opacity: 100%;
 }
 
 footer > div {
@@ -19,6 +29,17 @@ footer > div {
 
 footer > div > * {
     width: 30%;
+}
+
+footer ul {
+    list-style: none;
+    margin-top: 0;
+    padding: 0;
+}
+
+footer li {
+    font-size: 0.9em;
+    margin-top: 5px;
 }
 
 .footer-left {
@@ -97,11 +118,12 @@ footer > div > * {
     margin: auto 0;
 }
 
-p.footer-title {
+h2.footer-title {
     margin-top: 0;
     font-size: 5em;
     margin-bottom: 0;
     color: var(--light-text-color);
+    font-weight: normal;
 }
 
 p.footer-subtitle {
@@ -110,17 +132,7 @@ p.footer-subtitle {
     color: var(--light-text-color);
 }
 
-footer a {
-    text-decoration: none;
-    color: var(--light-text-color);
-}
-
-footer p {
-    font-size: 1.3em;
-    opacity: 100%;
-}
-
-a.contact-link {
+.contact-link {
     font-size: 1.5em;
     text-decoration: none;
     border-radius: 300px;
@@ -129,23 +141,12 @@ a.contact-link {
     transition: background-color 400ms;
 }
 
-a.contact-link:hover {
+.contact-link:hover {
     color: #396AE5;
     background-color: var(--light-text-color);
 }
 
-footer ul {
-    list-style: none;
-    margin-top: 0;
-    padding: 0;
-}
-
-footer li {
-    font-size: 0.9em;
-    margin-top: 5px;
-}
-
-footer div div:last-child p {
+.credits p {
     font-size: 1em;
     color: var(--light-text-color);
 }

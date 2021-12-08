@@ -99,7 +99,7 @@ if (!isset($router) || !isset($content) || !isset($current) || !isset($css) || !
 
     <div>
 
-        <div class="footer-left">
+        <article class="footer-left">
             <p class="center"><a href="<?= $router->url('about') . (isset($_GET['dark']) ? '?dark=true' : '')?>" class="contact-link">À propos</a></p>
 
             <p>Thème sombre :</p>
@@ -112,14 +112,14 @@ if (!isset($router) || !isset($content) || !isset($current) || !isset($css) || !
                     <div class="active-bg"></div>
                 </div>
             </div>
-        </div>
+        </article>
 
-        <div class="center">
-            <p class="footer-title">IUT Lyon 1</p>
+        <article class="center">
+            <h2 class="footer-title">IUT Lyon 1</h2>
             <p class="footer-subtitle"><em>L'excellence technologique</em></p>
-        </div>
+        </article>
 
-        <div>
+        <article class="credits">
             <p>
                 Crédits icônes <a href="https://www.flaticon.com" target="_blank" class="credits"><em>flaticons</em></a>
                 :
@@ -140,7 +140,7 @@ if (!isset($router) || !isset($content) || !isset($current) || !isset($css) || !
                         perfect</a></li>
             </ul>
 
-        </div>
+        </article>
     </div>
 
 </footer>

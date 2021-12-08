@@ -15,5 +15,7 @@ $js = '';
 ?>
 
 <h1 class="validation-title">Votre message a bien été envoyé</h1>
+
 <h2>Merci de votre participation</h2>
-<p>Vous allez être automatiquement redirigé (<a href="<?= $router->url('home') ?>">cliquez ici</a> si ce n'est pas le cas).</p>
+
+<p>Vous allez être automatiquement redirigé (<a href="<?= $router->url('home')  . (isset($_GET['dark']) ? '?dark=true' : '') ?>">cliquez ici</a> si ce n'est pas le cas).</p>

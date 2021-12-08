@@ -66,7 +66,7 @@ const headbandContent =
                 },
                 {
                     title: `Entourage`,
-                    description: `Il y a une très bonne ambiance parmi les étudiants de l'IUT. Les profs et le personnels sont très compétents et la formation est de qualité.`,
+                    description: `Il y a une très bonne ambiance parmi les étudiants de l'IUT. Les profs et le personnels sont très compétents et la formation est de qualité. Il est aussi important de noter qu'étudier à l'IUT Lyon 1, c'est suivre les pas de Sylvain Durif. En effet, il a effectué ses études dans cet établissement dans le département Informatique de cet établissement.`,
                     img: `img/team.png`,
                     alt: `Image groupe`
                 }
