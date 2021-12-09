@@ -14,8 +14,6 @@ document.getElementById("toggle-inner").addEventListener("click", function () {
         return;
     }
 
-    console.log(url);
-
     if (url.substr(-1) === "/") {
         window.location.href = url + "accueil?dark=true";
         return;
