@@ -12,7 +12,7 @@ HTML;
 
 <h1>Qu'est-ce que le BUT ?</h1>
 
-<img src="img/data.png" alt="Image ordinateur" class="big-img">
+<img src="img/data.png" dark="img/data-dark.png" alt="Image ordinateur" class="big-img">
 
 <custom-headband class="headband"></custom-headband>
 
@@ -46,14 +46,14 @@ HTML;
 
     <div class="prerequisites">
         <div>
-            <img src="img/data.png" alt="Image ordinateur" id="computer">
+            <img src="img/data.png" dark="img/data-dark.png" alt="Image ordinateur" id="computer">
             <p>
                 Il n’est pas nécessaire de savoir développer pour intégrer le BUT mais cela permet d'avoir des bases qui
                 peuvent faciliter la compréhension de certaines matières.
             </p>
         </div>
         <div>
-            <img src="img/maths.png" alt="Image mathématiques" id="maths">
+            <img src="img/maths.png" dark="img/maths-dark.png" alt="Image mathématiques" id="maths">
             <p>
                 Il est important d’avoir des connaissances en mathématiques, au moins celle enseigné en baccalauréat
                 STI2D
@@ -61,7 +61,7 @@ HTML;
             </p>
         </div>
         <div>
-            <img src="img/degree.png" alt="Image diplôme" id="degree">
+            <img src="img/degree.png" dark="img/degree-dark.png" alt="Image diplôme" id="degree">
             <p>
                 Pour rentrer en BUT Informatique, il faut un baccalauréat général avec des spécialités scientifiques ou
                 un
@@ -69,7 +69,7 @@ HTML;
             </p>
         </div>
         <div>
-            <img src="img/engineer.png" alt="Image ingénieur" id="engineer">
+            <img src="img/engineer.png" dark="img/engineer-dark.png" alt="Image ingénieur" id="engineer">
             <p>
                 Savoir travailler en autonomie est crucial pour pouvoir réussir son BUT. Il est aussi important de
                 savoir

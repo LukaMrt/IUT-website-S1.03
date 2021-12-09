@@ -8,18 +8,21 @@ const headbandContent =
                     title: `Durée du BUT`,
                     description: `Une BUT se prépare en 3 ans. Il est possible de quitter la formation après 2 en étant titulaire d'un DUT (Diplôme Universitaire de Technologie, remplacé par le BUT). La formation est découpée en 6 semestres, chacun étant distinct des autres par les matières qu'il contient et les évaluations qui permettent de le valider.`,
                     img: `img/clock.png`,
+                    dark: `img/clock-dark.png`,
                     alt: `Horloge`
                 },
                 {
                     title: `Matières enseignées (Semestre 1)`,
                     description: `Développement web, Conception de bases de données, Mathématiques, SQL, Langage C, Bases de l'économie, Algorithmique, Communication, Architecture des ordinateurs, Systèmes d'exploitation, Projet professionnel personnalisé, Git.`,
                     img: `img/calendar.png`,
+                    dark: `img/calendar-dark.png`,
                     alt: `Calendrier`
                 },
                 {
                     title: `Qualités requises`,
                     description: `Rigueur, Méthode, Autonomie, Motivation, Curiosité.`,
                     img: `img/medal.png`,
+                    dark: `img/medal-dark.png`,
                     alt: `Médaille`
                 }
             ]
@@ -32,18 +35,21 @@ const headbandContent =
                     title: `Master`,
                     description: `Il est possible de rentrer en Master après avoir réussi son BUT.`,
                     img: `img/scholarship.png`,
+                    dark: `img/scholarship-dark.png`,
                     alt: `Parcours étudiant`
                 },
                 {
                     title: `Écoles d'ingénieur`,
                     description: `Les écoles d'ingénieur acceptent des étudiants sortant d'IUT.`,
                     img: `img/engineer.png`,
+                    dark: `img/engineer-dark.png`,
                     alt: `Ingénieur`
                 },
                 {
                     title: `Insertion professionnelle`,
                     description: `Le BUT est un diplôme professionnalisant reconnu qui permet de rentrer dans le monde professionnel après son obtention.`,
                     img: `img/job-search.png`,
+                    dark: `img/job-search-dark.png`,
                     alt: `Monde professionnel`
                 }
             ]
@@ -56,18 +62,21 @@ const headbandContent =
                     title: `Ville de Lyon`,
                     description: `Étudier dans l'une des plus grandes villes étudiantes de France.`,
                     img: `img/lyon-logo.png`,
+                    dark: `img/lyon-logo-dark.png`,
                     alt: `Logo ville de Lyon`
                 },
                 {
                     title: `L'excellence technologique`,
                     description: `L'IUT se veut leader des formations scientifiques de niveau technicien dans la ville de Lyon. Il incarne l'excellence technologique portée par cette volonté.`,
                     img: `img/successful.png`,
+                    dark: ``,
                     alt: `Image succès`
                 },
                 {
                     title: `Entourage`,
                     description: `Il y a une très bonne ambiance parmi les étudiants de l'IUT. Les profs et le personnels sont très compétents et la formation est de qualité. Il est aussi important de noter qu'étudier à l'IUT Lyon 1, c'est suivre les pas de Sylvain Durif. En effet, il a effectué ses études dans le département Informatique de cet établissement.`,
                     img: `img/team.png`,
+                    dark: `img/team-dark.png`,
                     alt: `Image groupe`
                 }
             ]
@@ -147,8 +156,15 @@ class HeadBand extends HTMLElement {
 
         let title = document.createElement('div');
         title.classList.add('headband-card-title');
+
+        let img = `<img src="${content.img}" alt="${content.alt}" slot="headband-picture-${number}" class="headband-img">`;
+
+        if (content.dark !== '') {
+            img = `<img src="${content.img}" dark="${content.dark}" alt="${content.alt}" slot="headband-picture-${number}" class="headband-img">`;
+        }
+
         title.innerHTML = `
-                <img src="${content.img}" alt="${content.alt}" slot="headband-picture-${number}" class="headband-img">
+                ${img}
                 <h2 slot="headband-title-${number}">${content.title}</h2>
                 `;
 
