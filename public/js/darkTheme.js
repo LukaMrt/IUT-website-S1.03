@@ -29,8 +29,8 @@ function applyTheme() {
     const r = document.querySelector(':root');
 
     if (document.querySelector(".toggle-state").classList.contains("checked")) {
-        r.style.setProperty('--light-background', '#32303b');
-        r.style.setProperty('--dark-background', '#2c2a34');
+        r.style.setProperty('--light-background', '#2b2933');
+        r.style.setProperty('--dark-background', '#1c191f');
         r.style.setProperty('--dark-blue', '#2d8eb6');
         r.style.setProperty('--light-blue', '#59BCE7');
         r.style.setProperty('--text-color', '#e7e7e7');
