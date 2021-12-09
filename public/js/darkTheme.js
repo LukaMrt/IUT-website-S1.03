@@ -83,6 +83,14 @@ function applyTheme() {
                     images[i].src = 'img/scholarship-dark.png';
                     break;
 
+                case 'team.png':
+                    images[i].src = 'img/team-dark.png';
+                    break;
+
+                case 'lyon-logo.png':
+                    images[i].src = 'img/lyon-logo-dark.png';
+                    break;
+
             }
 
         }
