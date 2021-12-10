@@ -1,112 +1,112 @@
 .big-img {
-    height: 300px;
+  height: 300px;
 }
 
 .cards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 custom-card {
-    border: solid 1px var(--dark-blue);
-    background-color: var(--dark-background);
-    border-radius: 10px;
-    max-width: 30%;
-    margin: 20px;
-    padding: 5px 40px 15px 0;
-    text-align: left;
+  border: solid 1px var(--dark-blue);
+  background-color: var(--dark-background);
+  border-radius: 10px;
+  max-width: 30%;
+  margin: 20px;
+  padding: 5px 40px 15px 0;
+  text-align: left;
 }
 
 .card h3 {
-    text-transform: none;
-    font-weight: normal;
-    font-size: 1.4em;
-    position: relative;
-    margin-left: 15px;
+  text-transform: none;
+  font-weight: normal;
+  font-size: 1.4em;
+  position: relative;
+  margin-left: 15px;
 }
 
 .card h3::before {
-    content: '';
-    background-color: var(--dark-blue);
-    display: inline-block;
-    height: 1em;
-    width: 7px;
-    margin-right: 10px;
-    border-radius: 0 3px 3px 0;
-    position: absolute;
-    top: calc(50% - calc(1em / 2) - 1px);
-    right: calc(100% - 1px);
+  content: '';
+  background-color: var(--dark-blue);
+  display: inline-block;
+  height: 1em;
+  width: 7px;
+  margin-right: 10px;
+  border-radius: 0 3px 3px 0;
+  position: absolute;
+  top: calc(50% - calc(1em / 2) - 1px);
+  right: calc(100% - 1px);
 }
 
 .card p {
-    padding: 0 20px;
-    font-size: 1.1em;
+  padding: 0 20px;
+  font-size: 1.1em;
 }
 
 .prerequisites {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 90%;
-    margin-right: auto;
-    margin-left: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .prerequisites p {
-    padding: 0 70px;
-    font-size: 1.3em;
+  padding: 0 70px;
+  font-size: 1.3em;
 }
 
 .validation {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-bottom: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 70px;
 }
 
 .validation article {
-    width: 40%;
+  width: 40%;
 }
 
 .validation p {
-    padding: 0 60px;
-    font-size: 1.3em;
+  padding: 0 60px;
+  font-size: 1.3em;
 }
 
 @media (max-width: 1080px) {
 
-    .prerequisites {
-        flex-direction: column;
-        align-items: center;
-    }
+  .prerequisites {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .prerequisites div {
-        margin-bottom: 30px;
-    }
+  .prerequisites div {
+    margin-bottom: 30px;
+  }
 
 }
 
 @media (max-width: 720px) {
 
-    .cards {
-        flex-direction: column;
-        align-items: center;
-    }
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    custom-card {
-        max-width: 70%;
-    }
+  custom-card {
+    max-width: 70%;
+  }
 
-    .validation {
-        flex-direction: column;
-        align-items: center;
-    }
+  .validation {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .validation article {
-        width: 70%;
-    }
+  .validation article {
+    width: 70%;
+  }
 
 }

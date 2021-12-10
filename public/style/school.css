@@ -1,75 +1,75 @@
 .big-img {
-    margin-right: 60%;
-    margin-bottom: 0;
+  margin-right: 60%;
+  margin-bottom: 0;
 }
 
 .school-content {
-    margin: 50px 0;
-    display: flex;
-    flex-direction: row-reverse;
-    width: 90%;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 1.3em;
+  margin: 50px 0;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 90%;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.3em;
 }
 
 .school-content img {
-    height: 200px;
-    box-shadow: 30px 30px var(--dark-blue);
+  height: 200px;
+  box-shadow: 30px 30px var(--dark-blue);
 }
 
 .school-content article {
-    width: 60%;
+  width: 60%;
 }
 
 .reverse {
-    flex-direction: row;
+  flex-direction: row;
 }
 
 .reverse img {
-    box-shadow: -30px 30px var(--dark-blue);
+  box-shadow: -30px 30px var(--dark-blue);
 }
 
 .bde img {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 .map {
-    height: 600px;
-    width: 80%;
-    box-shadow: 20px 20px var(--dark-blue);
-    margin-bottom: 100px;
+  height: 600px;
+  width: 80%;
+  box-shadow: 20px 20px var(--dark-blue);
+  margin-bottom: 100px;
 }
 
 @media (max-width: 720px) {
 
-    .school-content {
-        flex-direction: column;
-        align-items: center;
-        margin: 30px 0;
-    }
+  .school-content {
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+  }
 
-    .school-content img {
-        height: 200px;
-        box-shadow: 15px 15px var(--dark-blue);
-    }
+  .school-content img {
+    height: 200px;
+    box-shadow: 15px 15px var(--dark-blue);
+  }
 
-    .school-content article {
-        width: 80%;
-        line-height: 1.2em;
-    }
+  .school-content article {
+    width: 80%;
+    line-height: 1.2em;
+  }
 
-    .school-content article h2 {
-        margin: 70px 0 30px;
-        line-height: 1.1em;
-    }
+  .school-content article h2 {
+    margin: 70px 0 30px;
+    line-height: 1.1em;
+  }
 
-    .bde img {
-        box-shadow: none;
-    }
+  .bde img {
+    box-shadow: none;
+  }
 
-    .map {
-        margin-top: 15px;
-    }
+  .map {
+    margin-top: 15px;
+  }
 
 }

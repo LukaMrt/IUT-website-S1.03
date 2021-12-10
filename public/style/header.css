@@ -1,186 +1,189 @@
 header {
-    flex: 1 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-bottom: 30px;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 30px;
 }
 
 header img {
-    height: 125px;
+  height: 125px;
 }
 
 .menu-btn {
-    display: none;
-    height: 51px;
-    width: 50px;
-    margin-top: 20px;
-    margin-right: 15px;
-    position: relative;
-    overflow: hidden;
+  display: none;
+  height: 51px;
+  width: 50px;
+  margin-top: 20px;
+  margin-right: 15px;
+  position: relative;
+  overflow: hidden;
 }
 
 .menu-btn span {
-    position: absolute;
-    background-color: gray;
-    height: 5px;
-    right: 5%;
-    border-radius: 3px;
-    transition: 0.5s;
+  position: absolute;
+  background-color: gray;
+  height: 5px;
+  right: 5%;
+  border-radius: 3px;
+  transition: 0.5s;
 }
 
 .menu-btn span:first-of-type {
-    transform: translateY(9px);
-    width: 90%;
+  transform: translateY(9px);
+  width: 90%;
 }
 
 .menu-btn span:nth-child(2) {
-    transform: translateY(23px);
-    width: 75%;
+  transform: translateY(23px);
+  width: 75%;
 }
 
 .menu-btn span:last-of-type {
-    transform: translateY(37px);
-    width: 50%
+  transform: translateY(37px);
+  width: 50%
 }
 
 .menu-btn-active span:first-of-type {
-    transform: translate(-3px, 23px) rotate(45deg);
-    width: 80%;
+  transform: translate(-3px, 23px) rotate(45deg);
+  width: 80%;
 }
 
 .menu-btn-active span:nth-child(2) {
-    transform: translate(60px, 23px);
+  transform: translate(60px, 23px);
 }
 
 .menu-btn-active span:last-of-type {
-    transform: translate(-3px, 23px) rotate(-45deg);
-    width: 80%;
+  transform: translate(-3px, 23px) rotate(-45deg);
+  width: 80%;
 }
 
 .menu {
-    width: 65%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  width: 65%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 header p {
-    margin-top: 50px;
-    opacity: 100%;
-    font-size: 2em;
+  margin-top: 50px;
+  opacity: 100%;
+  font-size: 2em;
 }
 
 header a {
-    text-decoration: none;
-    color: var(--text-color);
-    padding: 0 2px;
+  text-decoration: none;
+  color: var(--text-color);
+  padding: 0 2px;
 }
 
 a.page-link::after {
-    background-color: gray;
-    content: '';
-    display: block;
-    height: 3px;
-    width: 100%;
-    transform: scaleX(0);
+  background-color: gray;
+  content: '';
+  display: block;
+  height: 3px;
+  width: 100%;
+  transform: scaleX(0);
 }
 
 a.page-link:not(#current):hover::after {
-    animation: link-animation 0.5s cubic-bezier(.22, 1.16, .46, 1.33) forwards;
+  animation: link-animation 0.5s cubic-bezier(.22, 1.16, .46, 1.33) forwards;
 }
 
 a.page-btn {
-    color: var(--ligt-blue);
-    border-radius: 30px;
-    border: solid var(--ligt-blue);
-    padding: 10px 15px;
-    transition: background-color 400ms;
+  color: var(--ligt-blue);
+  border-radius: 30px;
+  border: solid var(--ligt-blue);
+  padding: 10px 15px;
+  transition: background-color 400ms;
 }
 
 a.page-btn:hover {
-    background-color: var(--ligt-blue);
-    color: white;
-    border-radius: 30px;
-    border: solid var(--ligt-blue);
-    padding: 10px 15px;
+  background-color: var(--ligt-blue);
+  color: white;
+  border-radius: 30px;
+  border: solid var(--ligt-blue);
+  padding: 10px 15px;
 }
 
 .current::after {
-    content: '';
-    background-color: gray;
-    display: block;
-    height: 3px;
-    width: 100%;
-    transform: scaleX(1);
+  content: '';
+  background-color: gray;
+  display: block;
+  height: 3px;
+  width: 100%;
+  transform: scaleX(1);
 }
 
 @keyframes link-animation {
-    from {
-        transform: scaleX(0);
-    }
-    to {
-        transform: scaleX(1)
-    }
+
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1)
+  }
+
 }
 
 @media (max-width: 1080px) {
 
-    header img {
-        height: 90px;
-    }
+  header img {
+    height: 90px;
+  }
 
-    .menu {
-        width: 70%;
-    }
+  .menu {
+    width: 70%;
+  }
 
-    header p {
-        font-size: 1.3em;
-    }
+  header p {
+    font-size: 1.3em;
+  }
 
 }
 
 @media (max-width: 720px) {
 
-    header {
-        flex-direction: column;
-    }
+  header {
+    flex-direction: column;
+  }
 
-    .responsive-header {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding-bottom: 30px;
-    }
+  .responsive-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 30px;
+  }
 
-    .menu-btn {
-        display: block;
-        overflow: hidden;
-    }
+  .menu-btn {
+    display: block;
+    overflow: hidden;
+  }
 
-    .menu-btn:hover {
-        cursor: pointer;
-    }
+  .menu-btn:hover {
+    cursor: pointer;
+  }
 
-    .menu {
-        width: 100%;
-        flex-direction: column;
-        justify-content: right;
-        align-items: center;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.5s ease-out;
-    }
+  .menu {
+    width: 100%;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+  }
 
-    .visible {
-        padding-top: 2px;
-        max-height: 250px;
-    }
+  .visible {
+    padding-top: 2px;
+    max-height: 250px;
+  }
 
-    header p {
-        margin-top: 0;
-        font-size: 1.6em;
-        line-height: 0.8em;
-    }
+  header p {
+    margin-top: 0;
+    font-size: 1.6em;
+    line-height: 0.8em;
+  }
 
 }
