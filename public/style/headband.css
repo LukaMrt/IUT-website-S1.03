@@ -16,13 +16,13 @@
 
 .headband-header h2 {
   font-size: 2.5em;
-  color: #FFFFFF;
+  color: var(--light-text-color);
 }
 
 .headband-header p {
   font-size: 1.3em;
   line-height: 1.5em;
-  color: #FFFFFF;
+  color: var(--light-text-color);
 }
 
 .headband-body {
@@ -91,7 +91,6 @@
 }
 
 @media (max-width: 720px) {
-
   .headband-header article {
     width: 90%;
   }

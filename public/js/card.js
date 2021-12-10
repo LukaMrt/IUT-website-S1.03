@@ -7,10 +7,10 @@ class Card extends HTMLElement {
         card.classList.add("card");
 
         let title = document.createElement("h3");
-        title.innerHTML = this.getAttribute("title");
+        title.innerHTML = escape(`this.getAttribute("title")`);
 
         let content = document.createElement("p");
-        content.innerHTML = this.getAttribute("content");
+        content.innerHTML = escape(this.getAttribute("content"));
 
         card.appendChild(title);
         card.appendChild(content);

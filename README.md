@@ -9,5 +9,5 @@ L'objectif est de réaliser un site web présentant la formation à destination 
 
 Ce site web a été réalisé en binôme par :
 
-- Melvyn Delpree
-- Luka Maret
+  - Melvyn Delpree
+  - Luka Maret

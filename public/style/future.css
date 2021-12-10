@@ -45,7 +45,6 @@
 }
 
 @media (max-width: 720px) {
-
   .right + div {
     width: 70%;
     flex-direction: column-reverse;

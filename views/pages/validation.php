@@ -9,8 +9,8 @@ header("refresh:5;url=" . $router->url('home'));
 $current = 'validation';
 
 $css = <<<HTML
-<link href="style/validation.css" rel="stylesheet" >
-HTML;
+    <link href="style/validation.css" rel="stylesheet" >
+    HTML;
 $js = '';
 ?>
 
@@ -18,4 +18,8 @@ $js = '';
 
 <h2>Merci de votre participation</h2>
 
-<p>Vous allez être automatiquement redirigé (<a href="<?= $router->url('home')  . (isset($_GET['dark']) ? '?dark=true' : '') ?>">cliquez ici</a> si ce n'est pas le cas).</p>
+<p>
+    Vous allez être automatiquement redirigé (<a
+            href="<?= $router->url('home') . (isset($_GET['dark']) ?? '?dark=true') ?>">cliquez ici</a>
+    si ce n'est pas le cas).
+</p>

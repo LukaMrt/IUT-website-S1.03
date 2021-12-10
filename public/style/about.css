@@ -5,6 +5,12 @@ main {
   margin-bottom: 50px;
 }
 
+main > h2 {
+  margin-top: 90px;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+}
+
 .author {
   width: 35%;
   max-width: 35%;
@@ -82,47 +88,59 @@ main label {
 }
 
 @keyframes translate1 {
+
   from {
     transform: translateX(-100%);
     opacity: 0;
   }
+
   to {
     transform: translateX(0);
     opacity: 1;
   }
+
 }
 
 @keyframes translate2 {
+
   from {
     transform: translateX(100%);
     opacity: 0;
   }
+
   to {
     transform: translateX(0);
     opacity: 1;
   }
+
 }
 
 @keyframes translate1B {
+
   from {
     transform: translateX(100%);
     opacity: 1;
   }
+
   to {
     transform: translateX(0);
     opacity: 0;
   }
+
 }
 
 @keyframes translate2B {
+
   from {
     transform: translateX(-100%);
     opacity: 1;
   }
+
   to {
     transform: translateX(0);
     opacity: 0;
   }
+
 }
 
 label.carousel {
@@ -147,12 +165,6 @@ input[name="carousel"] {
 #carousel-1:checked ~ label[for="carousel-1"] {
   background-color: var(--ligt-blue);
   border: 2px solid var(--ligt-blue);
-}
-
-main > h2 {
-  margin-top: 90px;
-  margin-bottom: 20px;
-  font-size: 2.5em;
 }
 
 .contact-form {
@@ -208,20 +220,15 @@ button {
 a {
   color: var(--ligt-blue);
   text-decoration: none;
-
-}
-
-button:hover {
-  background-color: var(--dark-blue);
-  color: white;
 }
 
 button:hover {
   cursor: pointer;
+  background-color: var(--dark-blue);
+  color: white;
 }
 
 @media (max-width: 720px) {
-
   .carousel-container {
     width: 100%;
   }

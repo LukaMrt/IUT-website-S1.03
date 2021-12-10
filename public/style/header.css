@@ -41,7 +41,7 @@ header img {
 
 .menu-btn span:last-of-type {
   transform: translateY(37px);
-  width: 50%
+  width: 50%;
 }
 
 .menu-btn-active span:first-of-type {
@@ -87,7 +87,7 @@ a.page-link::after {
 }
 
 a.page-link:not(#current):hover::after {
-  animation: link-animation 0.5s cubic-bezier(.22, 1.16, .46, 1.33) forwards;
+  animation: link-animation 0.5s cubic-bezier(0.22, 1.16, 0.46, 1.33) forwards;
 }
 
 a.page-btn {
@@ -116,19 +116,17 @@ a.page-btn:hover {
 }
 
 @keyframes link-animation {
-
   from {
     transform: scaleX(0);
   }
 
   to {
-    transform: scaleX(1)
+    transform: scaleX(1);
   }
 
 }
 
 @media (max-width: 1080px) {
-
   header img {
     height: 90px;
   }
@@ -144,7 +142,6 @@ a.page-btn:hover {
 }
 
 @media (max-width: 720px) {
-
   header {
     flex-direction: column;
   }

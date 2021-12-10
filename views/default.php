@@ -1,7 +1,7 @@
 <?php
 
 if (!isset($router) || !isset($content) || !isset($current) || !isset($css) || !isset($js)) {
-    exit(0);
+    die();
 }
 
 ?>
@@ -40,16 +40,16 @@ if (!isset($router) || !isset($content) || !isset($current) || !isset($css) || !
 
 
     <div class="menu">
-        <p><a href="<?= $router->url('home') . (isset($_GET['dark']) ? '?dark=true' : '')?>" class="<?= $current == 'home' ? 'current' : 'page-link' ?>">BUT ?</a>
+        <p><a href="<?= $router->url('home') . (isset($_GET['dark']) ?? '?dark=true')?>" class="<?= $current == 'home' ? 'current' : 'page-link' ?>">BUT ?</a>
         </p>
 
-        <p><a href="<?= $router->url('future') . (isset($_GET['dark']) ? '?dark=true' : '')?>" class="<?= $current == 'future' ? 'current' : 'page-link' ?>">Post-BUT</a>
+        <p><a href="<?= $router->url('future') . (isset($_GET['dark']) ?? '?dark=true')?>" class="<?= $current == 'future' ? 'current' : 'page-link' ?>">Post-BUT</a>
         </p>
 
-        <p><a href="<?= $router->url('school') . (isset($_GET['dark']) ? '?dark=true' : '')?>" class="<?= $current == 'school' ? 'current' : 'page-link' ?>">L'IUT
+        <p><a href="<?= $router->url('school') . (isset($_GET['dark']) ?? '?dark=true')?>" class="<?= $current == 'school' ? 'current' : 'page-link' ?>">L'IUT
                 Lyon 1</a></p>
 
-        <p><a class="about page-btn" href="<?= $router->url('about') . (isset($_GET['dark']) ? '?dark=true' : '')?>">À propos</a></p>
+        <p><a class="about page-btn" href="<?= $router->url('about') . (isset($_GET['dark']) ?? '?dark=true')?>">À propos</a></p>
 
     </div>
 
@@ -100,12 +100,12 @@ if (!isset($router) || !isset($content) || !isset($current) || !isset($css) || !
     <div>
 
         <article class="footer-left">
-            <p class="center"><a href="<?= $router->url('about') . (isset($_GET['dark']) ? '?dark=true' : '')?>" class="contact-link">À propos</a></p>
+            <p class="center"><a href="<?= $router->url('about') . (isset($_GET['dark']) ?? '?dark=true')?>" class="contact-link">À propos</a></p>
 
             <p>Thème sombre :</p>
             <div class="switch">
                 <div class="toggle">
-                    <div class="toggle-state <?= isset($_GET['dark']) ? 'checked' : ''?>"></div>
+                    <div class="toggle-state <?= isset($_GET['dark']) ?? 'checked'?>"></div>
                     <div id="toggle-inner" class="toggle-inner">
                         <div class="indicator"></div>
                     </div>

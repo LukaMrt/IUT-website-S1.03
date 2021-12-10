@@ -9,7 +9,7 @@
   justify-content: center;
 }
 
-custom-card {
+.custom-card {
   border: solid 1px var(--dark-blue);
   background-color: var(--dark-background);
   border-radius: 10px;
@@ -77,7 +77,6 @@ custom-card {
 }
 
 @media (max-width: 1080px) {
-
   .prerequisites {
     flex-direction: column;
     align-items: center;
@@ -90,13 +89,12 @@ custom-card {
 }
 
 @media (max-width: 720px) {
-
   .cards {
     flex-direction: column;
     align-items: center;
   }
 
-  custom-card {
+  .custom-card {
     max-width: 70%;
   }
 

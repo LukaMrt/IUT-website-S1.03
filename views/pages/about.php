@@ -57,7 +57,7 @@ shuffle($authors);
 
 <h2>Nous contacter</h2>
 
-<form action="<?= $router->url('validation') . (isset($_GET['dark']) ? '?dark=true' : '') ?>" method="post" class="contact-form">
+<form action="<?= $router->url('validation') . (isset($_GET['dark']) ?? '?dark=true') ?>" method="post" class="contact-form">
     <div>
         <label for="name">
             <input id="name" type="text" name="name" placeholder="Nom">

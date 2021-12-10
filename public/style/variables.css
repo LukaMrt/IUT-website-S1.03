@@ -1,8 +1,8 @@
 :root {
-  --light-background: #FFFFFF;
-  --dark-background: #FFFFFF;
-  --ligt-blue: #45A1F6;
-  --dark-blue: #396AE5;
-  --text-color: #000000;
-  --light-text-color: #FFFFFF;
+  --light-background: #fff;
+  --dark-background: #fff;
+  --ligt-blue: #45a1f6;
+  --dark-blue: #396ae5;
+  --text-color: #000;
+  --light-text-color: #fff;
 }

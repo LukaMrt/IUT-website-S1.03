@@ -1,6 +1,6 @@
 window.addEventListener("keydown", (event) => {
 
-    const container = document.querySelector('.snowflakes');
+    const container = document.querySelector(".snowflakes");
 
     if (event.keyCode === 78 && container.classList.contains("hidden")) {
         container.classList.remove("hidden");
