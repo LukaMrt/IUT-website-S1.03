@@ -228,7 +228,7 @@ button:hover {
   color: white;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 960px) {
   .carousel-container {
     width: 100%;
   }

@@ -152,8 +152,12 @@ p.footer-subtitle {
 }
 
 @media (max-width: 1350px) {
-  p.footer-title {
+  h2.footer-title {
     font-size: 4em;
+  }
+
+  p.footer-subtitle {
+    font-size: 1.5em;
   }
 
 }
@@ -163,8 +167,7 @@ p.footer-subtitle {
     order: 1;
   }
 
-  p.footer-title {
-    font-size: 3em;
+  h2.footer-title {
     margin-bottom: 10px;
   }
 
@@ -182,7 +185,7 @@ p.footer-subtitle {
     align-items: center;
   }
 
-  div.center + div {
+  .credits {
     margin-top: 20px;
     order: 2;
   }

@@ -29,7 +29,7 @@ if (!isset($router) || !isset($content) || !isset($current) || !isset($css) || !
 <header>
 
     <div class="responsive-header">
-        <img src="img/Lyon-1-Claude-Bernard.png" alt="Logo université Claude Bernard">
+        <img src="img/Lyon-1-Claude-Bernard.png" dark="img/Lyon-1-Claude-Bernard-dark.png" alt="Logo université Claude Bernard">
 
         <div class="menu-btn">
             <span></span>

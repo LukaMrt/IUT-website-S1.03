@@ -90,6 +90,13 @@
   width: 100%;
 }
 
+@media (max-width: 1080px) {
+  .headband-card-title h2 {
+    font-size: 1.5em;
+  }
+
+}
+
 @media (max-width: 720px) {
   .headband-header article {
     width: 90%;
