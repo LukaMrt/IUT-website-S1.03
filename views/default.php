@@ -95,7 +95,7 @@ if (!isset($router) || !isset($content) || !isset($current) || !isset($css) || !
 </main>
 
 <footer>
-    <img src="img/footer.png" alt="footer image">
+    <img src="img/footer.png" dark="img/footer-dark.png" alt="footer image">
 
     <div>
 
