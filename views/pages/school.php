@@ -16,7 +16,7 @@ $js = '<script src="js/headband.js" defer></script>';
 <div class="school-content">
 
     <!--    <img src="img/iut.png" alt="Photo IUT">-->
-    <img src="img/engineer.png" dark="img/engineer-dark.png" alt="Photo IUT">
+    <img src="img/iut.jpg" dark="img/engineer-dark.png" alt="Photo IUT">
 
     <article>
         <h2>Site de l'IUT</h2>
