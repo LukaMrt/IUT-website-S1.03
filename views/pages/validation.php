@@ -4,7 +4,7 @@ if (!isset($router)) {
     return;
 }
 
-header("refresh:5;url=" . $router->url('home'));
+header("refresh:5;url=" . $router->url('home') . (isset($_GET['dark']) ? '?dark=true' : ''));
 
 $current = 'validation';
 
@@ -20,6 +20,6 @@ $js = '';
 
 <p>
     Vous allez être automatiquement redirigé (<a
-            href="<?= $router->url('home') . (isset($_GET['dark']) ?? '?dark=true') ?>">cliquez ici</a>
+            href="<?= $router->url('home') . (isset($_GET['dark']) ? '?dark=true' : '') ?>">cliquez ici</a>
     si ce n'est pas le cas).
 </p>
