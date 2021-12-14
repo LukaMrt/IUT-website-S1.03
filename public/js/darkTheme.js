@@ -28,6 +28,7 @@ function applyTheme() {
         return;
     }
 
+    document.querySelector(".toggle-state").classList.add("checked");
     const rootStyle = document.querySelector(":root").style;
     rootStyle.setProperty("--light-background", "#2b2933");
     rootStyle.setProperty("--dark-background", "#1c191f");
