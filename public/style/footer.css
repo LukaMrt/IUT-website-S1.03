@@ -5,10 +5,10 @@ footer {
   flex-shrink: 0;
 }
 
-footer img {
+footer > img {
   background-color: var(--light-background);
   max-height: 100%;
-  max-width: 100%;
+  width: 100%;
 }
 
 footer a {
