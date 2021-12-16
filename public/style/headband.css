@@ -45,10 +45,6 @@
   width: 100%;
 }
 
-.headband-card-title h2 {
-  margin-top: 40px;
-}
-
 .headband-card {
   background-color: var(--dark-background);
   border: solid 1px #c5c5c5;
@@ -56,21 +52,26 @@
   padding: 10px 10px 20px;
 }
 
-.headband-card img {
-  padding-top: 10px;
+.headband-card-title {
+  height: 50%;
 }
 
-.headband-card h2 {
+.headband-card-title h2 {
+  margin-top: 40px;
   padding-bottom: 10px;
+}
+
+.headband-card-description {
+  padding: 20px 15% 0;
+}
+
+.headband-card img {
+  padding-top: 10px;
 }
 
 .headband-card p {
   font-size: 1.1em;
   padding-bottom: 15px;
-}
-
-.headband-card > div:last-of-type {
-  padding: 0 15%;
 }
 
 .headband-card1 {
@@ -109,6 +110,7 @@
   .headband-header p {
     font-size: 1em;
     line-height: 1.3em;
+    text-align: center;
   }
 
   .headband-cards {

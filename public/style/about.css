@@ -54,6 +54,7 @@ main > h2 {
 .author p {
   line-height: 0.25em;
   font-size: 1.2em;
+  text-align: center;
 }
 
 .carousel {

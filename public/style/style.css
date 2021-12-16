@@ -68,6 +68,10 @@ a {
     height: 90px;
   }
 
+  p {
+    text-align: justify;
+  }
+
 }
 
 .hidden {

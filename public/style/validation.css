@@ -3,5 +3,6 @@
 }
 
 main p {
+  width: 90%;
   margin-bottom: 50px;
 }

@@ -171,7 +171,7 @@ p.footer-subtitle {
     margin-bottom: 10px;
   }
 
-  div.center {
+  .center {
     order: 0;
     margin-top: 20px;
   }
@@ -190,7 +190,11 @@ p.footer-subtitle {
     order: 2;
   }
 
-  footer > div > * {
+  .credits p {
+    text-align: center;
+  }
+
+  footer article {
     width: 70%;
   }
 
