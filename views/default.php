@@ -21,6 +21,13 @@ if (!isset($router) || !isset($content) || !isset($current) || !isset($css) || !
     <script src="js/menu.js" defer></script>
     <script src="js/christmasTheme.js" defer></script>
     <script src="js/darkTheme.js" defer></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <title>BUT Info Lyon 1</title>
 </head>
 
@@ -100,7 +107,7 @@ if (!isset($router) || !isset($content) || !isset($current) || !isset($css) || !
     <div>
 
         <article class="footer-left">
-            <p class="center"><a href="<?= $router->url('about') . (isset($_GET['dark']) ? '?dark=true' : '')?>" class="contact-link">À propos</a></p>
+            <h2 class="center"><a href="<?= $router->url('about') . (isset($_GET['dark']) ? '?dark=true' : '')?>" class="contact-link">À propos</a></h2>
 
             <p>Thème sombre :</p>
             <div class="switch">
@@ -120,10 +127,10 @@ if (!isset($router) || !isset($content) || !isset($current) || !isset($css) || !
         </article>
 
         <article class="credits">
-            <p>
+            <h2>
                 Crédits icônes <a href="https://www.flaticon.com" target="_blank" class="credits"><em>flaticons</em></a>
                 :
-            </p>
+            </h2>
 
             <ul>
                 <li><a href="https://www.flaticon.com/fr/auteurs/kosonicon" title="kosonicon"
