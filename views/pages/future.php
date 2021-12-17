@@ -9,7 +9,7 @@ $js = '<script src="js/headband.js" defer></script>';
 
 <h1>Parcours post-BUT</h1>
 
-<img src="img/arrow.png" dark="img/arrow-dark.png" alt="Image flèche" class="big-img">
+<img src="img/arrow.png" data-dark="img/arrow-dark.png" alt="Image flèche" class="big-img">
 
 <custom-headband class="headband"></custom-headband>
 

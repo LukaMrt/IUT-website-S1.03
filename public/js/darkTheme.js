@@ -41,8 +41,8 @@ function applyTheme() {
     for (let i = 0; i < images.length; i++) {
 
         let image = images[i];
-        if (image.hasAttribute("dark")) {
-            image.src = image.getAttribute("dark");
+        if (image.hasAttribute("data-dark")) {
+            image.src = image.getAttribute("data-dark");
         }
 
     }

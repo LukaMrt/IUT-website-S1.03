@@ -36,7 +36,7 @@ if (!isset($router) || !isset($content) || !isset($current) || !isset($css) || !
 <header>
 
     <div class="responsive-header">
-        <img src="img/Lyon-1-Claude-Bernard.png" dark="img/Lyon-1-Claude-Bernard-dark.png" alt="Logo université Claude Bernard">
+        <img src="img/Lyon-1-Claude-Bernard.png" data-dark="img/Lyon-1-Claude-Bernard-dark.png" alt="Logo université Claude Bernard">
 
         <div class="menu-btn">
             <span></span>
@@ -102,7 +102,7 @@ if (!isset($router) || !isset($content) || !isset($current) || !isset($css) || !
 </main>
 
 <footer>
-    <img src="img/footer.png" dark="img/footer-dark.png" alt="footer image">
+    <img src="img/footer.png" data-dark="img/footer-dark.png" alt="footer image">
 
     <div>
 

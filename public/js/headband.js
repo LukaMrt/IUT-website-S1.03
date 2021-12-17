@@ -160,7 +160,7 @@ class HeadBand extends HTMLElement {
         let img = `<img src="${content.img}" alt="${content.alt}" slot="headband-picture-${number}" class="headband-img">`;
 
         if (content.dark !== "") {
-            img = `<img src="${content.img}" dark="${content.dark}" alt="${content.alt}" slot="headband-picture-${number}" class="headband-img">`;
+            img = `<img src="${content.img}" data-dark="${content.dark}" alt="${content.alt}" slot="headband-picture-${number}" class="headband-img">`;
         }
 
         title.innerHTML = `
