@@ -14,5 +14,5 @@ php -S localhost:8000 -t public/
 
 Ce site web a été réalisé en binôme par :
 
-  - [https://github.com/Melvyn27](Melvyn Delpree)
-  - [https://github.com/LukaMrt](Luka Maret)
+- [DELPREE Melvyn](https://github.com/Melvyn27)
+- [MARET Luka](https://github.com/LukaMrt)
