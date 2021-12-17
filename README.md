@@ -12,7 +12,5 @@ php -S localhost:8000 -t public/
 
 ## Authors
 
-Ce site web a été réalisé en binôme par :
-
 - [DELPREE Melvyn](https://github.com/Melvyn27)
 - [MARET Luka](https://github.com/LukaMrt)
