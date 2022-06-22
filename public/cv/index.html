@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head -->
+<!-- defines page information for navigator and links to css -->
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style/page.css">
+    <link rel="stylesheet" type="text/css" href="style/header.css">
+    <link rel="stylesheet" type="text/css" href="style/main-content.css">
+    <link rel="stylesheet" type="text/css" href="style/left-content.css">
+    <link rel="stylesheet" type="text/css" href="style/right-content.css">
+    <link rel="stylesheet" type="text/css" href="style/credits.css">
+    <title>Luka Maret</title>
+</head>
+<body>
+
+<!-- Header -->
+<!-- contains the title and profile image -->
+<header>
+    <div class="title">
+        <h1>Maret<span>Luka</span></h1>
+        <p>French developer</p>
+    </div>
+
+    <div class="header-image">
+        <img src="img/Luka.jpeg" alt="Luka Maret's picture">
+    </div>
+</header>
+
+<main>
+
+    <!-- Left content div -->
+    <!-- contains the categories experties, education and work -->
+    <div>
+
+        <!-- Experties article -->
+        <!-- contains the description of personal and professional experties -->
+        <article>
+
+            <!-- Title of the category -->
+            <h2>
+                <span><img class="logo" src="img/pencil.png" alt="skills logo"></span>
+                <span class="title-arrow">▶</span>
+                <span>Expertises & skills</span>
+            </h2>
+
+            <!-- Lists of experties -->
+            <!-- ul because it isn't ordered -->
+            <div class="expertises">
+                <div>
+                    <h3>Personal</h3>
+                    <ul>
+                        <li>Team work</li>
+                        <li>Organisation</li>
+                        <li>Productive</li>
+                        <li>Leadership</li>
+                        <li>Self-motivation</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Professional</h3>
+                    <ul>
+                        <li>French and english speaking</li>
+                        <li>Agile methods</li>
+                        <li>Organization tools</li>
+                        <li>Git</li>
+                        <li>Technological watch</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <!-- Education article -->
+        <!-- contains the obtained degrees -->
+        <article>
+
+            <!-- Title of the category -->
+            <h2>
+                <span><img class="logo" src="img/mortarboard.png" alt="education logo"></span>
+                <span class="title-arrow">▶</span>
+                <span>Education</span>
+            </h2>
+
+            <!-- Container of the 3 degrees -->
+            <div class="education">
+                <div class="education-element">
+                    <p>06-2018</p>
+                    <p>|</p>
+                    <div>
+                        <h3>Secondary school degree</h3>
+                        <p>Secondary school Cl. & G. Grange</p>
+                        <p>Seyssuel, France</p>
+                    </div>
+                </div>
+
+                <div class="education-element">
+                    <p>06-2021</p>
+                    <p>|</p>
+                    <div>
+                        <h3>High school degree</h3>
+                        <p>High school Galilée</p>
+                        <p>Vienne, France</p>
+                    </div>
+                </div>
+
+                <div class="education-element education-future">
+                    <p>06-2024</p>
+                    <p>|</p>
+                    <div>
+                        <h3>Computer science Bachelor</h3>
+                        <p>University Claude Bernard</p>
+                        <p>Lyon, France</p>
+                    </div>
+                </div>
+                <p class="timeline-arrow">▶</p>
+            </div>
+        </article>
+
+        <!-- Work article -->
+        <!-- contains the work experiences -->
+        <article class="work">
+
+            <!-- Title of the category -->
+            <h2>
+                <span><img class="logo" src="img/portfolio.png" alt="work logo"></span>
+                <span class="title-arrow">▶</span>
+                <span>Work experience</span>
+            </h2>
+
+            <!-- First experience -->
+            <h3>Secondary school internship</h3>
+            <p class="work-place">Explorair : 03-2018</p>
+            <p class="work-description">
+                I did a one-month internship to discover the work world. During this period, I followed multiple
+                people to see their work. I saw the journey of a team leader, commercial manager and technician.
+            </p>
+
+            <!-- Second experience -->
+            <h3>Freelance developer</h3>
+            <p class="work-place">Luka Maret's corp : 09-2021 - now</p>
+            <p class="work-description">
+                To finance my life, I give some mathematics and programming courses to secondary school and high school
+                students.
+            </p>
+        </article>
+    </div>
+
+    <!-- Aside -->
+    <!-- contains the details such as contact and skills -->
+    <aside>
+
+        <!-- Contact article -->
+        <!-- contains the contact links such as phone number and email address -->
+        <article class="contact">
+
+            <h2>Contact</h2>
+
+            <img class="logo" src="img/phone-call.png" alt="phone logo">
+            <p>+33 7 82 39 06 95</p>
+
+            <img class="logo" src="img/pin.png" alt="residence logo">
+            <p>Luzinay, France</p>
+
+            <img class="logo" src="img/link.png" alt="website logo">
+            <p><a href="https://www.lukamaret.com" target="_blank">www.lukamaret.com</a></p>
+
+            <img class="logo" src="img/mail.png" alt="mail logo">
+            <p>maret.luka@gmail.com</p>
+        </article>
+
+        <!-- Contact article -->
+        <!-- contains the progress bars that describe the skills -->
+        <article class="skills">
+            <h2>Skills</h2>
+            <p>Java</p>
+            <progress class="progress-bar" value="80" max="100"></progress>
+
+            <p>HTML/CSS</p>
+            <progress class="progress-bar" value="60" max="100"></progress>
+
+            <p>PHP</p>
+            <progress class="progress-bar" value="40" max="100"></progress>
+
+            <p>Git</p>
+            <progress class="progress-bar" value="80" max="100"></progress>
+
+            <p>SQL</p>
+            <progress class="progress-bar" value="50" max="100"></progress>
+
+            <p>Python</p>
+            <progress class="progress-bar" value="50" max="100"></progress>
+        </article>
+
+        <!-- Prize article -->
+        <!-- contains the obtained prizes -->
+        <article>
+            <h2>Prizes</h2>
+            <ul>
+                <li>
+                    <a href="https://www.education.gouv.fr/le-concours-general-des-lycees-et-des-metiers-un-prix-d-excellence-10022"
+                       target="_blank">
+                        <em>General competition</em>
+                    </a>
+                    : 1st prize (engineer science)
+                </li>
+                <li>
+                    <a href="https://animath.fr/2020/11/13/laureats-des-olympiades-nationales-de-mathematiques/"
+                       target="_blank">
+                        <em>Mathematics olympiads</em>
+                    </a>
+                    : silver medal
+                </li>
+            </ul>
+        </article>
+
+    </aside>
+</main>
+
+<!-- Footer -->
+<!-- contains the credits for images and template -->
+<footer>
+    <h2>Credits</h2>
+    <p>
+        Icons made by <a href="https://www.flaticon.com/authors/prosymbols" title="Prosymbols" target="_blank">Prosymbols</a>,
+        <a href="https://www.freepik.com" title="Freepik" target="_blank">Freepik</a> and
+        <a href="https://www.flaticon.com/authors/those-icons" title="Those Icons" target="_blank">Those Icons</a> from
+        <a href="https://www.flaticon.com/" title="Flaticon" target="_blank">flaticon</a>.
+    </p>
+    <p>
+        <a href="img/template.webp" title="Template" target="_blank">Template</a> which inspired this page found on
+        <a href="https://creativemarket.com/" title="creativemarket" target="_blank">creativemarket</a>.
+    </p>
+</footer>
+</body>
+</html>

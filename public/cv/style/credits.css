@@ -1,0 +1,18 @@
+/* ---- Credits ----
+h2 have no style
+*/
+
+footer {
+    margin: 10px 0 0 5%;
+    padding-bottom: 0;
+}
+
+footer h2 {
+    text-decoration: none;
+    text-transform: none;
+    border-radius: 0;
+    border: 0;
+    font-family: serif;
+    padding-left: 0;
+    margin-left: 0;
+}

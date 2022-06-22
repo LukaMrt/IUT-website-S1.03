@@ -1,0 +1,30 @@
+/* --- Background colors ---
+dark gray for header
+light gray for aside
+set color to black for progress bars
+*/
+
+:root {
+    --header-color: #2B2B2B;
+    --aside-color: #CECFD3;
+}
+
+progress::-moz-progress-bar {
+    background: black;
+}
+
+progress::-webkit-progress-value {
+    background: black;
+}
+
+progress {
+    color: black;
+}
+
+/* ----- Page -----
+remove border margin
+*/
+
+body {
+    margin: 0;
+}
