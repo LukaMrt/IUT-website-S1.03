@@ -23,5 +23,9 @@
       "name": "Luka Maret",
       "email": "maret.luka@gmail.com"
     }
-  ]
+  ],
+  "scripts": {
+    "docker": "docker buildx build --platform linux/arm64 -t lukamrt/iut-website --push .",
+    "docker-run": "docker run --rm --name iut-website -p 8085:80 lukamrt/iut-website"
+  }
 }
